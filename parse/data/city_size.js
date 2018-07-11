@@ -16,3 +16,6 @@ const data = [
         name: 'Medium + Small'
     }
 ]
+
+module.exports = data;
+export default data;
