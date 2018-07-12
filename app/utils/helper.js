@@ -1,6 +1,13 @@
 /**
  * Created by sunqi on 2018/6/19.
  */
+import city_list from '../data/cities'
+import eco_list from '../data/eco'
+
+import group_options from '../data/filter/groups'
+import region_options from '../data/filter/regions'
+import pilot_options from '../data/filter/pilotStatus'
+
 export default {
   getOptionNameById: (id, options)=> {
     let name = '?';
@@ -25,5 +32,51 @@ export default {
         name: o[lang]
       }
     })
+  },
+  getCityMeta: (city_index) => {
+    let city = {};
+    city_list.forEach(c => {
+      if (c.id == city_index) {
+        city = c;
+      }
+    })
+    return city;
+  },
+  getCityEco: (city_index) => {
+    let eco = {};
+    eco_list.forEach(c => {
+      if (c.city_inedx == city_index) {
+        eco = c;
+      }
+    })
+    return eco;
+  },
+  getCityRegion: (id, lang) => {
+    let name = '?'
+    region_options.forEach(item => {
+      if (item.id == id) {
+        name = item[lang]
+      }
+    })
+    return name
+  },
+  getCityGroup: (id, lang) => {
+    let name = '?'
+    group_options.forEach(item => {
+      if (item.id == id) {
+        name = item[lang]
+      }
+    })
+    return name
+  },
+  getCityPilot: (id, lang) => {
+    let name = '?'
+    pilot_options.forEach(item => {
+      if (item.id == id) {
+        name = item[lang]
+      }
+    })
+    return name
   }
+
 }
