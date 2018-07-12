@@ -1,0 +1,188 @@
+{
+    "data": [
+        {
+            "id": "ind01",
+            "name": "Primary Energy Consump per GDP",
+            "unit": "tce / 10,000 RMB",
+            "scat": "1",
+            "max": "10",
+            "label": "Energy Consumption / GDP"
+        },
+        {
+            "id": "ind02",
+            "name": "CO2 Emissions per GDP",
+            "unit": "tCO2 / 10,000 RMB",
+            "scat": "1",
+            "max": "10",
+            "label": "CO2 Emissions / GDP"
+        },
+        {
+            "id": "ind03",
+            "name": "CO2 per Capita",
+            "unit": "t CO2 /cap /yr",
+            "scat": "2",
+            "max": "6",
+            "label": "CO2 / capita"
+        },
+        {
+            "id": "ind04",
+            "name": "Primary Energy Consump per Capita",
+            "unit": "tce/cap / yr",
+            "scat": "2",
+            "max": "6",
+            "label": "Energy Consumption / capita"
+        },
+        {
+            "id": "ind05",
+            "name": "Non-Fossil Fuel Share of Primary Energy",
+            "unit": "%",
+            "scat": "2",
+            "max": "6",
+            "label": "Non-Fossil Fuel Energy"
+        },
+        {
+            "id": "ind06",
+            "name": "Industrial Econ Energy Intensity",
+            "unit": "tce / 10,000 RMB",
+            "scat": "3",
+            "max": "9",
+            "label": "Industrial Energy Intensity"
+        },
+        {
+            "id": "ind07",
+            "name": "Heavy Industry GDP Share (of tot industrial GDP)",
+            "unit": "%",
+            "scat": "3",
+            "max": "9",
+            "label": "Heavy Industry GDP Share"
+        },
+        {
+            "id": "ind08",
+            "name": "Num of Public Transport Vehicles per 10,000 people",
+            "unit": "units / 10,000 person",
+            "scat": "4",
+            "max": "2",
+            "label": "Public Trans Vehicles / 10,000 ppl"
+        },
+        {
+            "id": "ind09",
+            "name": "Urban Rail Transit Line Extent",
+            "unit": "km / km2",
+            "scat": "4",
+            "max": "2",
+            "label": "Urban Rail Extent"
+        },
+        {
+            "id": "ind10",
+            "name": "Bus Trips per Capita",
+            "unit": "trips / person / yr",
+            "scat": "4",
+            "max": "2",
+            "label": "Bus Trips / capita"
+        },
+        {
+            "id": "ind11",
+            "name": "Green Buildings Share Goal + Plan",
+            "unit": "%",
+            "scat": "5",
+            "max": "2",
+            "label": "Green Buildings Share"
+        },
+        {
+            "id": "ind12",
+            "name": "Residential Energy Consump per Capita",
+            "unit": "kWh / cap",
+            "scat": "5",
+            "max": "3",
+            "label": "Residential Energy / capita"
+        },
+        {
+            "id": "ind13",
+            "name": "Commercial Energy Consump per Employee",
+            "unit": "kWh / employee",
+            "scat": "5",
+            "max": "3",
+            "label": "Commercial Energy / employee"
+        },
+        {
+            "id": "ind14",
+            "name": "Annual Municipal Solid Waste per Capita",
+            "unit": "t / cap / yr",
+            "scat": "6",
+            "max": "3",
+            "label": "Solid Waste / capita"
+        },
+        {
+            "id": "ind15",
+            "name": "Blue Sky Days, or AQI",
+            "unit": "%",
+            "scat": "6",
+            "max": "4",
+            "label": "Blue Sky Days (or AQI)"
+        },
+        {
+            "id": "ind16",
+            "name": "PM 2.5",
+            "unit": "μg / m3 ",
+            "scat": "6",
+            "max": "3",
+            "label": "PM2.5"
+        },
+        {
+            "id": "ind17",
+            "name": "Municip Water Consump per Capita",
+            "unit": " L / cap / d",
+            "scat": "6",
+            "max": "3",
+            "label": "Water Consumption / capita"
+        },
+        {
+            "id": "ind18",
+            "name": "Energy Saving and Enviro Protect Spending, Budget Ratio",
+            "unit": "%",
+            "scat": "6",
+            "max": "3",
+            "label": "Energy & Enviro Budget Ratio"
+        },
+        {
+            "id": "ind19",
+            "name": "Green Space per Capita",
+            "unit": "m2 / cap",
+            "scat": "6",
+            "max": "4",
+            "label": "Green Space / capita"
+        },
+        {
+            "id": "ind20",
+            "name": "Municip Low Carbon / Climate Plan",
+            "unit": "[True/False]",
+            "scat": "8",
+            "max": "2.5",
+            "label": "Low Carbon / Climate Plan"
+        },
+        {
+            "id": "ind21",
+            "name": "Municip RE + Alt Energy Strategy",
+            "unit": "[True/False]",
+            "scat": "8",
+            "max": "2.5",
+            "label": "Renew + Alt Energy Strategy"
+        },
+        {
+            "id": "ind22",
+            "name": "Climate Resilience (assessment / plan)",
+            "unit": "[True/False]",
+            "scat": "8",
+            "max": "2.5",
+            "label": "Climate Resiliance Plan"
+        },
+        {
+            "id": "ind23",
+            "name": "Low Carbon Lifestyle Publicity",
+            "unit": "[True/False]",
+            "scat": "8",
+            "max": "2.5",
+            "label": "Low Carbon Lifestyle Publicity"
+        }
+    ]
+}

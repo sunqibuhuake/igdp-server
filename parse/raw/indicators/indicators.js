@@ -1,7 +1,8 @@
 const fs = require('fs')
 const result = [];
-fs.readFile('./indicators.raw', (err, data) => {
-    const lines = data.split('\n');
+fs.readFile('./indicators.raw','utf-8', (err, data) => {
+    console.log(err, data);
+    const lines = data.split('\r\n');
     lines.forEach(line => {
         const arr = line.split('#');
         if (arr.length > 1) {
