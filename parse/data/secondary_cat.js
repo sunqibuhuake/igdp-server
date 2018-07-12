@@ -2,39 +2,47 @@ const data = [
     {
         id: 1,
         en: 'Economic Dimension',
-        zh: ''
+        zh: '',
+        pid: 1,
     },
     {
         id: 2,
         en: 'Energy & Power',
-        zh: ''
+        zh: '',
+        pid: 2,
     },
     {
         id: 3,
         en: 'Industry',
-        zh: ''
+        zh: '',
+        pid: 2,
+
     },
     {
         id: 4,
         en: 'Transportation',
-        zh: ''
+        zh: '',
+        pid: 2,
     },
     {
         id: 5,
         en: 'Buildings',
-        zh: ''
+        zh: '',
+        pid: 2,
     },
     {
         id: 6,
         en: 'Environment & Land Use',
-        zh: ''
+        zh: '',
+        pid: 3,
     },
     {
         id: 7,
         en: 'Policy Dimension',
-        zh: ''
+        zh: '',
+        pid: 4,
     }
 ]
 
 module.exports = data;
-export default data; 
+//export default data; 

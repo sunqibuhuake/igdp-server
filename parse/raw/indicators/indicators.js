@@ -1,5 +1,21 @@
 const fs = require('fs')
+const scat = require('../../data/secondary_cat.js')
+
+
 const result = [];
+
+function getPcat(id) {
+    let pid = false
+    scat.forEach((c) => {
+        if (c.id == id) {
+            pid = c.pid;
+        }
+    })
+
+    return pid;
+    
+
+}
 fs.readFile('./indicators.raw','utf-8', (err, data) => {
     console.log(err, data);
     const lines = data.split('\r\n');
@@ -8,11 +24,16 @@ fs.readFile('./indicators.raw','utf-8', (err, data) => {
         if (arr.length > 1) {
             result.push({
                 id: arr[0],
-                name: arr[1],
+                name: {
+                    en: arr[1]
+                },
                 unit: arr[2],
-                scat: arr[3],
+                sid: arr[3],
+                pid: getPcat(arr[3]),
                 max: arr[4],
-                label: arr[5]
+                label: {
+                    en: arr[5]
+                }
             })
         }
     })
