@@ -1,0 +1,23 @@
+ind01#Primary Energy Consump per GDP#tce / 10,000 RMB#1#10#Energy Consumption / GDP
+ind02#CO2 Emissions per GDP#tCO2 / 10,000 RMB#1#10#CO2 Emissions / GDP
+ind03#CO2 per Capita#t CO2 /cap /yr#2#6#CO2 / capita
+ind04#Primary Energy Consump per Capita#tce/cap / yr#2#6#Energy Consumption / capita
+ind05#Non-Fossil Fuel Share of Primary Energy#%#2#6#Non-Fossil Fuel Energy
+ind06#Industrial Econ Energy Intensity#tce / 10,000 RMB#3#9#Industrial Energy Intensity
+ind07#Heavy Industry GDP Share (of tot industrial GDP)#%#3#9#Heavy Industry GDP Share
+ind08#Num of Public Transport Vehicles per 10,000 people#units / 10,000 person#4#2#Public Trans Vehicles / 10,000 ppl
+ind09#Urban Rail Transit Line Extent#km / km2#4#2#Urban Rail Extent
+ind10#Bus Trips per Capita#trips / person / yr#4#2#Bus Trips / capita
+ind11#Green Buildings Share Goal + Plan#%#5#2#Green Buildings Share
+ind12#Residential Energy Consump per Capita#kWh / cap#5#3#Residential Energy / capita
+ind13#Commercial Energy Consump per Employee#kWh / employee#5#3#Commercial Energy / employee
+ind14#Annual Municipal Solid Waste per Capita#t / cap / yr#6#3#Solid Waste / capita
+ind15#Blue Sky Days, or AQI#%#6#4#Blue Sky Days (or AQI)
+ind16#PM 2.5#μg / m3 #6#3#PM2.5
+ind17#Municip Water Consump per Capita# L / cap / d#6#3#Water Consumption / capita
+ind18#Energy Saving and Enviro Protect Spending, Budget Ratio#%#6#3#Energy & Enviro Budget Ratio
+ind19#Green Space per Capita#m2 / cap#6#4#Green Space / capita
+ind20#Municip Low Carbon / Climate Plan#[True/False]#8#2.5#Low Carbon / Climate Plan
+ind21#Municip RE + Alt Energy Strategy#[True/False]#8#2.5#Renew + Alt Energy Strategy
+ind22#Climate Resilience (assessment / plan)#[True/False]#8#2.5#Climate Resiliance Plan
+ind23#Low Carbon Lifestyle Publicity#[True/False]#8#2.5#Low Carbon Lifestyle Publicity
