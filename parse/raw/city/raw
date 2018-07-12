@@ -1,115 +1,115 @@
-1#Shanghai#上海#Shanghai#上海#East (东)#1#P#YES#1
-2#Beijing#北京#Beijing#北京#East (东)#2#P#YES#1
-3#Shenzhen#深圳#Guangdong#广东#East (东)#3#P#YES#1
-4#Chongqing#重庆#Chongqing#重庆#West (西)#4#H#YES#1
-5#Tianjin#天津#Tianjin#江苏#East (东)#5#P#YES#1
-6#Nanjing#南京#Jiangsu#江苏#East (东)#6#P#NO#2
-7#Guangzhou#广州#Guangdong#广东#East (东)#7#P#YES#1
-8#Wuhan#武汉#Hubei#浙江#Central (中)#8#P#YES#2
-9#Chengdu#成都#Sichuan#四川#West (西)#9#H#NO#1
-10#Shenyang#沈阳#Liaoning#辽宁#North East (东北)#10#H#OTHER#2
-11#Harbin#哈尔滨#Heilongjiang#黑龙江#North East (东北)#11#H#NO#2
-12#Xi'an#西安#Shanxi#江苏#West (西)#12#H#OTHER#2
-13#Kunming#昆明#Yunnan#云南#West (西)#13#H#YES#3
-14#Zhengzhou#郑州#Henan#河南#Central (中)#14#H#NO#2
-15#Qingdao#青岛#Shandong#山东#East (东)#15#H#YES#3
-16#Changsha#长沙#Hunan#湖南#Central (中)#16#H#NO#2
-17#Changchun#长春#Jilin#吉林#North East (东北)#17#H#NO#3
-18#Dalian#大连#Liaoning#辽宁#North East (东北)#18#P#OTHER#2
-19#Taiyuan#太原#Shanxi#山西#Central (中)#19#H#NO#3
-20#Jinan#济南#Shandong#山东#East (东)#20#H#NO#3
-21#Hangzhou#杭州#Zhejiang#浙江#East (东)#21#P#YES#2
-22#Shijiazhuang#石家庄#Hebei#河北#East (东)#22#H#YES#2
-23#Urumuqi#乌鲁木齐#Xinjiang#浙江#West (西)#23#H#YES#3
-24#Suzhou#苏州#Jiangsu#江苏#East (东)#24#H#YES#2
-25#Shantou#汕头#Guangdong#广东#East (东)#25#H#OTHER#3
-26#Nanchang#南昌#Jiangxi#江西#Central (中)#26#H#YES#3
-27#Jieyang#揭阳#Guangdong#广东#East (东)#27#M#OTHER#3
-28#Luoyang#洛阳#Henan#河南#Central (中)#28#M#NO#3
-29#Nanning#南宁#Guangxi#广西#West (西)#29#M#NO#3
-30#Hefei#合肥#Anhui#安徽#Central (中)#30#H#NO#2
-31#Wuxi#无锡#Jiangsu#浙江#East (东)#31#H#NO#3
-32#Guiyang#贵阳#Guizhou#贵州#West (西)#32#H#YES#3
-33#Fuzhou#福州#Fujian#福建#East (东)#33#H#NO#2
-34#Tangshan#唐山#Hebei#宁夏#East (东)#34#H#NO#3
-35#Dongguan#东莞#Guangdong#广东#East (东)#35#H#OTHER#2
-36#Lanzhou#兰州#Gansu#甘肃#West (西)#36#H#NO#3
-37#Linyi#临沂#Shandong#山东#East (东)#37#H#NO#2
-38#Xia'men#厦门#Fujian#宁夏#East (东)#38#P#YES#3
-39#Xuzhou#徐州#Jiangsu#宁夏#East (东)#39#H#NO#3
-40#Zibo#淄博#Shandong#山东#East (东)#40#H#NO#3
-41#Anshan#鞍山#Liaoning#辽宁#North East (东北)#41#H#OTHER#3
-42#Handan#邯郸#Hebei#河北#East (东)#42#M#NO#3
-43#Ningbo#宁波#Zhejiang#浙江#East (东)#43#H#YES#2
-44#Yantai#烟台#Shandong#江苏#East (东)#44#H#NO#3
-45#Baotou#包头#Inner Mongolia#内蒙古#West (西)#45#H#NO#3
-46#Wenzhou#温州#Zhejiang#江苏#East (东)#46#H#YES#2
-47#Fushun#抚顺#Liaoning#辽宁#North East (东北)#47#H#OTHER#3
-48#Changzhou#常州#Jiangsu#江苏#East (东)#48#H#NO#3
-49#foshan#佛山#Guangdong#广东#East (东)#49#H#OTHER#2
-50#Huhhot#呼和浩特#Inner Mongolia#内蒙古#West (西)#50#H#NO#3
-51#Jilin#吉林#Jilin#吉林#North East (东北)#51#M#YES#3
-52#Huai'an#淮安#Jiangsu#江苏#East (东)#52#H#YES#3
-53#Weifang#潍坊#Shandong#宁夏#East (东)#53#H#NO#2
-54#Nanyang#南阳#Henan#河南#Central (中)#54#M#NO#3
-55#Jining#济宁#Shandong#山东#East (东)#55#M#NO#3
-56#Datong#大同#Shanxi#山西#Central (中)#56#M#NO#3
-57#Xi'ning#西宁#Qinghai#浙江#West (西)#57#H#NO#3
-58#Nantong#南通#Jiangsu#江苏#East (东)#58#H#NO#3
-59#Daqing#大庆#Heilongjiang#黑龙江#North East (东北)#59#H#NO#3
-60#Liuzhou#柳州#Guangxi#广西#West (西)#60#H#NO#3
-61#Baoding#保定#Hebei#河北#East (东)#61#M#YES#3
-62#Qiqihar#齐齐哈尔#Heilongjiang#黑龙江#North East (东北)#62#M#NO#3
-63#Zhuzhou#株洲#Hunan#湖南#Central (中)#63#H#NO#3
-64#Yinchun#银川#Ningxia#宁夏#West (西)#64#H#NO#3
-65#Zigong#自贡#Sichuan#四川#West (西)#65#M#NO#3
-66#Huai'nan#淮南#Anhui#安徽#Central (中)#66#M#NO#3
-67#Yancheng#盐城#Jiangsu#浙江#East (东)#67#H#NO#3
-68#Yangzhou#扬州#Jiangsu#宁夏#East (东)#68#H#NO#3
-69#Wuhu#芜湖#Anhui#宁夏#Central (中)#69#H#NO#3
-70#Hengyang#衡阳#Hunan#湖南#Central (中)#70#M#NO#3
-71#Huizhou#惠州#Guangdong#广东#East (东)#71#H#OTHER#3
-72#Haikou#海口#Hainan#海南#East (东)#72#H#OTHER#3
-95#Mianyang#绵阳#Zhejiang#浙江#East (东)#73#H#NO#3
-73#Taizhou_ZJ_台#台州#Henan#河南#Central (中)#74#M#NO#3
-74#Shangqiu#商丘#Zhejiang#浙江#East (东)#75#H#NO#3
-75#Shaoxing#绍兴#Fujian#福建#East (东)#76#H#NO#2
-76#Quanzhou#泉州#Sichuan#四川#West (西)#77#M#NO#3
-77#Luzhou#泸州#Sichuan#四川#West (西)#78#M#NO#3
-78#Nanchong#南充#Jiangxi#江西#Central (中)#79#M#YES#3
-79#Ganzhou#赣州#Guangdong#广东#East (东)#80#M#OTHER#3
-80#Jiangmen#江门#Henan#河南#Central (中)#81#M#NO#3
-81#Pingdingshan#平顶山#Liaoning#辽宁#North East (东北)#82#H#OTHER#3
-82#Yingkou#营口#Shandong#山东#East (东)#83#M#NO#3
-83#Zaozhuang#枣庄#Hebei#河北#East (东)#84#M#YES#3
-84#Qinhuangdao#秦皇岛#Guangdong#广东#East (东)#85#M#OTHER#3
-85#Zhanjiang#湛江#Liaoning#辽宁#North East (东北)#86#H#OTHER#3
-86#Benxi#本溪#Inner Mongolia#内蒙古#West (西)#87#M#NO#3
-87#Chifeng#赤峰#Liaoning#辽宁#North East (东北)#88#M#OTHER#3
-88#Jinzhou#锦州#Hubei#浙江#Central (中)#89#H#OTHER#3
-89#Xiangyang#襄阳#Hebei#江苏#East (东)#90#M#NO#3
-90#Xingtai#邢台#Shanxi#宁夏#West (西)#91#M#OTHER#3
-91#Xianyang#咸阳#Henan#河南#Central (中)#92#M#NO#3
-92#Kaifeng#开封#Hebei#河北#East (东)#93#M#NO#3
-93#Zhangjiakou#张家口#Hubei#湖北#Central (中)#94#M#OTHER#3
-94#Huangshi#黄石#Sichuan#四川#West (西)#95#M#NO#3
-96#Taizhou_JS_泰#泰州#Jiangsu#江苏#East (东)#96#H#NO#3
-97#Huaibei#淮北#Anhui#安徽#Central (中)#97#M#NO#3
-98#bengbu#蚌埠#Anhui#安徽#Central (中)#98#M#NO#3
-99#Yichang#宜昌#Hubei#浙江#Central (中)#99#H#OTHER#3
-100#Zhenjiang#镇江#Jiangsu#江苏#East (东)#100#H#YES#3
-101#Zunyi#遵义#Guizhou#贵州#West (西)#101#M#YES#3
-102#Guilin#桂林#Guangxi#广西#West (西)#102#M#YES#3
-103#Changde#常德#Hunan#湖南#Central (中)#103#M#NO#3
-104#Suqian#宿迁#Jiangsu#江苏#East (东)#104#M#NO#3
-105#Neijiang#内江#Sichuan#四川#West (西)#105#M#NO#3
-106#Laiwu#莱芜#Shandong#山东#East (东)#106#M#NO#4
-107#Jingdezhen#景德镇#Jiangxi#江西#Central (中)#107#M#YES#3
-108#Jincheng#晋城#Shanxi#山西#Central (中)#108#M#YES#3
-109#Guangyuan#广元#Sichuan#四川#West (西)#109#M#YES#3
-110#Wuwei#武威#Gansu#江苏#West (西)#110#M#NO#4
-111#Hulunbuir#呼伦贝尔#Inner Mongolia#内蒙古#West (西)#111#M#YES#3
-112#Yan'an#延安#Shanxi#江苏#West (西)#112#M#YES#3
-113#Chizhou#池州#Anhui#安徽#Central (中)#113#M#YES#4
-114#Nanping#南平#Fujian#福建#East (东)#114#M#YES#3
-115#Jinchang#金昌#Gansu#甘肃#West (西)#115#M#YES#4
+1#Shanghai#上海#Shanghai#上海#E#1#P#YES#1
+2#Beijing#北京#Beijing#北京#E#2#P#YES#1
+3#Shenzhen#深圳#Guangdong#广东#E#3#P#YES#1
+4#Chongqing#重庆#Chongqing#重庆#W#4#H#YES#1
+5#Tianjin#天津#Tianjin#江苏#E#5#P#YES#1
+6#Nanjing#南京#Jiangsu#江苏#E#6#P#NO#2
+7#Guangzhou#广州#Guangdong#广东#E#7#P#YES#1
+8#Wuhan#武汉#Hubei#浙江#C#8#P#YES#2
+9#Chengdu#成都#Sichuan#四川#W#9#H#NO#1
+10#Shenyang#沈阳#Liaoning#辽宁#NE#10#H#OTHER#2
+11#Harbin#哈尔滨#Heilongjiang#黑龙江#NE#11#H#NO#2
+12#Xi'an#西安#Shanxi#江苏#W#12#H#OTHER#2
+13#Kunming#昆明#Yunnan#云南#W#13#H#YES#3
+14#Zhengzhou#郑州#Henan#河南#C#14#H#NO#2
+15#Qingdao#青岛#Shandong#山东#E#15#H#YES#3
+16#Changsha#长沙#Hunan#湖南#C#16#H#NO#2
+17#Changchun#长春#Jilin#吉林#NE#17#H#NO#3
+18#Dalian#大连#Liaoning#辽宁#NE#18#P#OTHER#2
+19#Taiyuan#太原#Shanxi#山西#C#19#H#NO#3
+20#Jinan#济南#Shandong#山东#E#20#H#NO#3
+21#Hangzhou#杭州#Zhejiang#浙江#E#21#P#YES#2
+22#Shijiazhuang#石家庄#Hebei#河北#E#22#H#YES#2
+23#Urumuqi#乌鲁木齐#Xinjiang#浙江#W#23#H#YES#3
+24#Suzhou#苏州#Jiangsu#江苏#E#24#H#YES#2
+25#Shantou#汕头#Guangdong#广东#E#25#H#OTHER#3
+26#Nanchang#南昌#Jiangxi#江西#C#26#H#YES#3
+27#Jieyang#揭阳#Guangdong#广东#E#27#M#OTHER#3
+28#Luoyang#洛阳#Henan#河南#C#28#M#NO#3
+29#Nanning#南宁#Guangxi#广西#W#29#M#NO#3
+30#Hefei#合肥#Anhui#安徽#C#30#H#NO#2
+31#Wuxi#无锡#Jiangsu#浙江#E#31#H#NO#3
+32#Guiyang#贵阳#Guizhou#贵州#W#32#H#YES#3
+33#Fuzhou#福州#Fujian#福建#E#33#H#NO#2
+34#Tangshan#唐山#Hebei#宁夏#E#34#H#NO#3
+35#Dongguan#东莞#Guangdong#广东#E#35#H#OTHER#2
+36#Lanzhou#兰州#Gansu#甘肃#W#36#H#NO#3
+37#Linyi#临沂#Shandong#山东#E#37#H#NO#2
+38#Xia'men#厦门#Fujian#宁夏#E#38#P#YES#3
+39#Xuzhou#徐州#Jiangsu#宁夏#E#39#H#NO#3
+40#Zibo#淄博#Shandong#山东#E#40#H#NO#3
+41#Anshan#鞍山#Liaoning#辽宁#NE#41#H#OTHER#3
+42#Handan#邯郸#Hebei#河北#E#42#M#NO#3
+43#Ningbo#宁波#Zhejiang#浙江#E#43#H#YES#2
+44#Yantai#烟台#Shandong#江苏#E#44#H#NO#3
+45#Baotou#包头#Inner Mongolia#内蒙古#W#45#H#NO#3
+46#Wenzhou#温州#Zhejiang#江苏#E#46#H#YES#2
+47#Fushun#抚顺#Liaoning#辽宁#NE#47#H#OTHER#3
+48#Changzhou#常州#Jiangsu#江苏#E#48#H#NO#3
+49#foshan#佛山#Guangdong#广东#E#49#H#OTHER#2
+50#Huhhot#呼和浩特#Inner Mongolia#内蒙古#W#50#H#NO#3
+51#Jilin#吉林#Jilin#吉林#NE#51#M#YES#3
+52#Huai'an#淮安#Jiangsu#江苏#E#52#H#YES#3
+53#Weifang#潍坊#Shandong#宁夏#E#53#H#NO#2
+54#Nanyang#南阳#Henan#河南#C#54#M#NO#3
+55#Jining#济宁#Shandong#山东#E#55#M#NO#3
+56#Datong#大同#Shanxi#山西#C#56#M#NO#3
+57#Xi'ning#西宁#Qinghai#浙江#W#57#H#NO#3
+58#Nantong#南通#Jiangsu#江苏#E#58#H#NO#3
+59#Daqing#大庆#Heilongjiang#黑龙江#NE#59#H#NO#3
+60#Liuzhou#柳州#Guangxi#广西#W#60#H#NO#3
+61#Baoding#保定#Hebei#河北#E#61#M#YES#3
+62#Qiqihar#齐齐哈尔#Heilongjiang#黑龙江#NE#62#M#NO#3
+63#Zhuzhou#株洲#Hunan#湖南#C#63#H#NO#3
+64#Yinchun#银川#Ningxia#宁夏#W#64#H#NO#3
+65#Zigong#自贡#Sichuan#四川#W#65#M#NO#3
+66#Huai'nan#淮南#Anhui#安徽#C#66#M#NO#3
+67#Yancheng#盐城#Jiangsu#浙江#E#67#H#NO#3
+68#Yangzhou#扬州#Jiangsu#宁夏#E#68#H#NO#3
+69#Wuhu#芜湖#Anhui#宁夏#C#69#H#NO#3
+70#Hengyang#衡阳#Hunan#湖南#C#70#M#NO#3
+71#Huizhou#惠州#Guangdong#广东#E#71#H#OTHER#3
+72#Haikou#海口#Hainan#海南#E#72#H#OTHER#3
+95#Mianyang#绵阳#Zhejiang#浙江#E#73#H#NO#3
+73#Taizhou_ZJ_台#台州#Henan#河南#C#74#M#NO#3
+74#Shangqiu#商丘#Zhejiang#浙江#E#75#H#NO#3
+75#Shaoxing#绍兴#Fujian#福建#E#76#H#NO#2
+76#Quanzhou#泉州#Sichuan#四川#W#77#M#NO#3
+77#Luzhou#泸州#Sichuan#四川#W#78#M#NO#3
+78#Nanchong#南充#Jiangxi#江西#C#79#M#YES#3
+79#Ganzhou#赣州#Guangdong#广东#E#80#M#OTHER#3
+80#Jiangmen#江门#Henan#河南#C#81#M#NO#3
+81#Pingdingshan#平顶山#Liaoning#辽宁#NE#82#H#OTHER#3
+82#Yingkou#营口#Shandong#山东#E#83#M#NO#3
+83#Zaozhuang#枣庄#Hebei#河北#E#84#M#YES#3
+84#Qinhuangdao#秦皇岛#Guangdong#广东#E#85#M#OTHER#3
+85#Zhanjiang#湛江#Liaoning#辽宁#NE#86#H#OTHER#3
+86#Benxi#本溪#Inner Mongolia#内蒙古#W#87#M#NO#3
+87#Chifeng#赤峰#Liaoning#辽宁#NE#88#M#OTHER#3
+88#Jinzhou#锦州#Hubei#浙江#C#89#H#OTHER#3
+89#Xiangyang#襄阳#Hebei#江苏#E#90#M#NO#3
+90#Xingtai#邢台#Shanxi#宁夏#W#91#M#OTHER#3
+91#Xianyang#咸阳#Henan#河南#C#92#M#NO#3
+92#Kaifeng#开封#Hebei#河北#E#93#M#NO#3
+93#Zhangjiakou#张家口#Hubei#湖北#C#94#M#OTHER#3
+94#Huangshi#黄石#Sichuan#四川#W#95#M#NO#3
+96#Taizhou_JS_泰#泰州#Jiangsu#江苏#E#96#H#NO#3
+97#Huaibei#淮北#Anhui#安徽#C#97#M#NO#3
+98#bengbu#蚌埠#Anhui#安徽#C#98#M#NO#3
+99#Yichang#宜昌#Hubei#浙江#C#99#H#OTHER#3
+100#Zhenjiang#镇江#Jiangsu#江苏#E#100#H#YES#3
+101#Zunyi#遵义#Guizhou#贵州#W#101#M#YES#3
+102#Guilin#桂林#Guangxi#广西#W#102#M#YES#3
+103#Changde#常德#Hunan#湖南#C#103#M#NO#3
+104#Suqian#宿迁#Jiangsu#江苏#E#104#M#NO#3
+105#Neijiang#内江#Sichuan#四川#W#105#M#NO#3
+106#Laiwu#莱芜#Shandong#山东#E#106#M#NO#4
+107#Jingdezhen#景德镇#Jiangxi#江西#C#107#M#YES#3
+108#Jincheng#晋城#Shanxi#山西#C#108#M#YES#3
+109#Guangyuan#广元#Sichuan#四川#W#109#M#YES#3
+110#Wuwei#武威#Gansu#江苏#W#110#M#NO#4
+111#Hulunbuir#呼伦贝尔#Inner Mongolia#内蒙古#W#111#M#YES#3
+112#Yan'an#延安#Shanxi#江苏#W#112#M#YES#3
+113#Chizhou#池州#Anhui#安徽#C#113#M#YES#4
+114#Nanping#南平#Fujian#福建#E#114#M#YES#3
+115#Jinchang#金昌#Gansu#甘肃#W#115#M#YES#4

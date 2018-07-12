@@ -1,1 +1,3 @@
 export const SWITCH_LANGUAGE = 'APP/SWITCH_LANGUAGE'
+
+export const SET_VALUE = 'APP/SET_VALUE'

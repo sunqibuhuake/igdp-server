@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu, Dropdown, Icon } from 'antd';
 const MenuItem = Menu.Item;
+import helper from '../utils/helper'
 export default class DropOptions extends React.PureComponent{
 
     constructor(props) {
@@ -14,10 +15,14 @@ export default class DropOptions extends React.PureComponent{
     componentDidMount() {
 
         const menu = this.props.options.map(o => (
-            <MenuItem 
+            <MenuItem
             value={o.id}
             key={Math.random()}>
-                <div>{o.name}</div>
+                <div
+                  onClick={() => {
+                    this.props.setValue(this.props.path, o.id)
+                  }}
+                >{o.name}</div>
             </MenuItem>
         ))
 
@@ -33,7 +38,7 @@ export default class DropOptions extends React.PureComponent{
                 {this.state.menu}
             </Menu>
           );
-          
+
         return (
 
             <Dropdown overlay={menu} trigger={['click']}>
@@ -42,7 +47,7 @@ export default class DropOptions extends React.PureComponent{
                 margin: '0 -12px',
                 padding: '0 12px'
             }}>
-              {this.state.text} 
+              {helper.getOptionNameById(this.props.value, this.props.options)}
               <Icon style={{float: 'right', lineHeight: '36px'}} type="down" />
             </div>
           </Dropdown>

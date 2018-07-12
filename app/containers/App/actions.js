@@ -1,5 +1,6 @@
 import {
-  SWITCH_LANGUAGE
+  SWITCH_LANGUAGE,
+SET_VALUE
 } from './constants';
 
 export function switchLanguage(lang) {
@@ -9,3 +10,9 @@ export function switchLanguage(lang) {
   }
 }
 
+export function setValue(path, value) {
+  return {
+    type: SET_VALUE,
+    path, value
+  }
+}

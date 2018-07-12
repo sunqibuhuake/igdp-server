@@ -12,14 +12,24 @@ const makeSelectLocation = () => createSelector(
   selectRoute,
   (routeState) => routeState.get('location').toJS()
 );
+const makeSelectPage2 = () => createSelector(
+  selectGlobal,
+  (state) => state.get('page2').toJS()
+);
+
 
 const makeSelectLang = () => createSelector(
   selectGlobal,
   (state) => state.get('language')
 );
- 
+//const makeSelectValue = (path) => createSelector(
+//  selectGlobal,
+//  (state) => state.getIn(path.split('.'))
+//);
 export {
   selectGlobal,
   makeSelectLocation,
-  makeSelectLang
+  makeSelectLang,
+  makeSelectPage2,
+  //makeSelectValue
 };

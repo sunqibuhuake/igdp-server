@@ -2,34 +2,15 @@
  * Created by sunqi on 2018/5/29.
  */
 export default {
-  ready: false,
-  error: false,
-  feature: '',
-  language: 'zh',
-  order: {
-    order:'date',
-    lang: 'zh'
-  },
-  target: {
-    name: false,
-    value: false
-  },
-  projects: {
-    ready: false,
-    error: false,
-    list: false,
-  },
-  news: {
-    ready: false,
-    error: false,
-    list: false,
-  },
-  about: false,
-  search: {
-    key: '',
-    active: false
-  },
-  header: 'big',
-  selected: false
+  language: 'en',
+  page2: {
+    filter: {
+      region: 'all',
+      group: 'all',
+      pilot: 'all'
+    },
+    city_index: '1',
+    year: '2015'
+  }
 
 }

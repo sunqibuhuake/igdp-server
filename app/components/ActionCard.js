@@ -4,7 +4,7 @@ export default class ActionCard extends React.PureComponent{
         return (
             <section style={{
                 background: 'rgb(230,230,230)',
-                marginBottom: 24
+                marginBottom: 6
             }}>
                 <div style={{
                     height: 37,

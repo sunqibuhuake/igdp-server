@@ -13,7 +13,8 @@
 import { fromJS } from 'immutable';
 import initData from '../../data/init'
 import {
-  SWITCH_LANGUAGE
+  SWITCH_LANGUAGE,
+SET_VALUE
 } from './constants';
 
 
@@ -24,6 +25,8 @@ function appReducer(state = initialState, action) {
 
     case SWITCH_LANGUAGE:
       return state.set('language', action.lang);
+    case SET_VALUE:
+          return state.setIn(action.path.split('.'), action.value);
 
     default:
       return state;
