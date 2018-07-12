@@ -4,10 +4,10 @@ import {
   Route,
 } from 'react-router-dom';
 
-import ArticlePage from 'containers/ArticlePage/Loadable';
-import Header from 'containers/Header';
-import FetchWrapper from '../FetchWrapper'
-import AboutPage from '../AboutPage'
+import Home from 'containers/Home/Loadable';
+import Header from 'containers/Header'
+import FetchWrapper from 'containers/FetchWrapper'
+ 
 
 import './style.css'
 
@@ -18,11 +18,7 @@ export default function App(props) {
       <div className="sq-container">
         <Header {...props}></Header>
         <Switch>
-          <Route exact path="/" component={ArticlePage}/>
-          <Route exact path="/news/:id" component={ArticlePage}/>
-          <Route exact path="/projects/:id" component={ArticlePage}/>
-          <Route exact path="/about" component={AboutPage}/>
-          <Route path="" component={ArticlePage}/>
+          <Route exact path="/" component={Home}/>
         </Switch>
       </div>
     </FetchWrapper>

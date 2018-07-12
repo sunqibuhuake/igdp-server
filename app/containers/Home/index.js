@@ -5,46 +5,57 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
-import injectReducer from 'utils/injectReducer';
-import injectSaga from 'utils/injectSaga';
+import helper from '../../utils/helper'
+ 
 import {
   makeSelectLang,
-  makeSelectLocation
+  makeSelectLocation,
 } from '../App/selectors';
-import {
-  switchLanguage
-} from '../App/actions';
-import saga from './saga';
+
+import { switchLanguage } from '../App/actions';
+
+import Page2 from '../Page2' 
+
+export class Home extends React.PureComponent {
 
 
-
-export class FetchWrapper extends React.PureComponent {
+   
 
   componentDidMount() {
+ 
+  }
+
+  selectFirstNews() {
+    
+  }
+
+  componentWillReceiveProps(np) {
+
   }
 
  
+  componentDidUpdate() {
+ 
+  }
 
   render() {
-
+  
     const styles = {
       root: {
         padding: 0,
-        margin: 0,
-        width: '100%'
+        margin: 0
       }
     }
 
-    return (
-      <div style={styles.root}>
-        {this.props.children}
-      </div>
-    )
 
+    return (
+      <div>
+        <Page2 {...this.props}></Page2>
+      </div>
+    );
   }
 }
 
@@ -56,14 +67,10 @@ export function mapDispatchToProps(dispatch) {
 
 const mapStateToProps = createStructuredSelector({
   lang: makeSelectLang(),
-  location: makeSelectLocation()
+  location: makeSelectLocation(),
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
-
-const withSaga = injectSaga({key: 'fetch', saga});
-
 export default compose(
-  withSaga,
   withConnect
-)(FetchWrapper);
+)(Home);

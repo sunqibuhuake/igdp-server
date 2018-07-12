@@ -3,7 +3,17 @@
   /*transition: all .3s cubic-bezier(.645,.045,.355,1);*/
 }
 html, body {
-  background: #CCC;
+  background: white;
+}
+
+.container {
+  width: 1000px;
+  padding: 0;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  display: block;
+
 }
 .vertical-center {
   display: -webkit-box;
@@ -24,22 +34,18 @@ html, body {
   height: 100%;
   position: relative;
 }
-.fake-border {
-  position: absolute;
+.fh {
+  height: 100%;
+}
+.fw {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  z-index: 99;
-  box-sizing: border-box;
-  background: black;
-  cursor: pointer;
 }
-.hover-border-top {
-  top: 0;
-  height: 0px;
+.tal {
+  text-align: left;
 }
-.hover-border-bottom {
-  bottom: 0;
-  height: 1px;
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
 }
