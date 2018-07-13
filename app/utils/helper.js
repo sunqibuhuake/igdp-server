@@ -7,7 +7,8 @@ import eco_list from '../data/eco'
 import group_options from '../data/filter/groups'
 import region_options from '../data/filter/regions'
 import pilot_options from '../data/filter/pilotStatus'
-
+import size_options from '../data/city_size'
+import primary_cat from '../data/primary_cat'
 export default {
   getOptionNameById: (id, options)=> {
     let name = '?';
@@ -77,6 +78,19 @@ export default {
       }
     })
     return name
-  }
+  },
+  getCitySize: (id, lang) => {
+    let name = '?'
+    size_options.forEach(item => {
+      if (item.id == id) {
+        name = item[lang]
+      }
+    })
+    return name;
+  },
+  getCityPrimaryData: (city_index) => {
+
+  },
+
 
 }

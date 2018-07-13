@@ -1,0 +1,16 @@
+.meta-groups {
+  position: relative;
+  margin-top: 12px;
+  padding: 0px 0 12px 12px;
+}
+.meta-groups::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: green;
+
+
+}

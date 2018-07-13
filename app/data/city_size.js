@@ -1,19 +1,23 @@
 const data = [
     {
         id: 1,
-        name: 'Mega'
+        en: 'Mega',
+        zh: ''
     },
     {
         id: 2,
-        name: 'Very Large'
+        en: 'Very Large',
+        zh: ''
     },
     {
         id: 3,
-        name: 'Large'
+        en: 'Large',
+        zh: ''
     },
     {
         id: 4,
-        name: 'Medium + Small'
+        en: 'Medium + Small',
+        zh: ''
     }
 ]
 
