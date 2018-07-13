@@ -2,7 +2,141 @@ import indicators from '../data/indicator'
 import detail from '../data/detail'
 import secondary_cats from '../data/secondary_cat'
 import primary_cats from '../data/primary_cat'
+import city_list from '../data/cities'
 
+export function getSecondaryAvg(lang, year) {
+  let arr = []
+  city_list.forEach( city => {
+    const city_index = city.id;
+    const city_arr = getAllSecondaryData(city_index, year, lang)
+    city_arr.forEach((item, index) => {
+      if (!arr[index]) {
+        arr[index] = {
+          name: item.name,
+          value: 0
+        }
+      }
+      arr[index].value += (item.value - 0);
+    })
+  })
+
+  return arr.map(item => {
+    item.avg = item.value / city_list.length
+    return {
+      name: item.name,
+      value: (item.value / city_list.length).toFixed(2)
+    }
+  })
+
+}
+
+export function getSecondaryMax(lang, year) {
+  let arr = []
+  city_list.forEach( city => {
+    const city_index = city.id;
+    const city_arr = getAllSecondaryData(city_index, year, lang)
+    city_arr.forEach((item, index) => {
+      if (!arr[index]) {
+        arr[index] = {
+          name: item.name,
+          value: 0
+        }
+      }
+      if (item.value > arr[index].value) {
+        arr[index].value = (item.value - 0);
+      }
+    })
+  })
+
+  return arr;
+
+}
+
+export function getSecondaryMin(lang, year) {
+  let arr = []
+  city_list.forEach( city => {
+    const city_index = city.id;
+    const city_arr = getAllSecondaryData(city_index, year, lang)
+    city_arr.forEach((item, index) => {
+      if (!arr[index]) {
+        arr[index] = {
+          name: item.name,
+          value: 999
+        }
+      }
+      if (item.value < arr[index].value) {
+        arr[index].value = (item.value - 0);
+      }
+    })
+  })
+  return arr;
+
+}
+
+export function getPrimaryLineData(city_index){
+  const city_indicators = getCityDetail(city_index);
+  let sum2010 = 0;
+  let sum2015 = 0;
+  for( let ind in city_indicators) {
+    sum2010 += (city_indicators[ind]['2010'] - 0)
+    sum2015 += (city_indicators[ind]['2015'] - 0)
+  }
+  return [
+    {
+      name: 'Score',
+      list: [
+        {
+          name: '2010',
+          value: sum2010.toFixed(2)
+        },
+        {
+          name: '2015',
+          value: sum2015.toFixed(2)
+        }
+      ]
+    }
+  ]
+}
+
+export function getAllSecondaryLineData(city_index,lang) {
+  const arr = []
+  secondary_cats.forEach(cat => {
+    const item = getSecondaryLineData(city_index, cat.id)
+    arr.push({
+      name: item[lang],
+      list: [
+        {
+          value: item.value2010.toFixed(2)
+        },
+        {
+          value: item.value2015.toFixed(2)
+        }
+      ]
+    })
+  })
+  return arr;
+}
+
+export function getAllIndicatorLineData(city_index,lang) {
+  const city_indicators = getCityDetail(city_index)
+  const arr = [];
+  for(let ind in city_indicators) {
+    const meta = getIndicatorMeta(ind)
+    arr.push({
+      name: meta.name[lang],
+      list: [
+        {
+          value: (city_indicators[ind]['2010'] - 0).toFixed(2)
+        },
+        {
+          value: (city_indicators[ind]['2015'] - 0).toFixed(2)
+        }
+      ]
+    })
+  }
+  return arr;
+
+}
 export function getAllPrimaryData(city_index, year, lang) {
   const arr = []
   primary_cats.forEach(cat => {
@@ -54,12 +188,9 @@ export function getAllSecondaryData(city_index, year,lang) {
 
 
 export function getSecondaryData(city_index, sid, year) {
-
   const list = getIndicatorList(sid, 'sid')
   const mapHelper = arr2obj(list);
-
   const city_indicators = getCityDetail(city_index)
-
   const value = sumIndicatorsValue(mapHelper, city_indicators, year)
   const max = sumIndicatorsMax(list)
   const cat = getCatById(secondary_cats,sid)
@@ -68,7 +199,20 @@ export function getSecondaryData(city_index, sid, year) {
     max,
     ...cat
   }
+}
 
+export function getSecondaryLineData(city_index, sid) {
+  const list = getIndicatorList(sid, 'sid')
+  const mapHelper = arr2obj(list);
+  const city_indicators = getCityDetail(city_index)
+  const value2010 = sumIndicatorsValue(mapHelper, city_indicators, '2010')
+  const value2015 = sumIndicatorsValue(mapHelper, city_indicators, '2015')
+  const cat = getCatById(secondary_cats,sid)
+  return {
+    value2010,
+    value2015,
+    ...cat
+  }
 }
 
 export function getPrimaryData(city_index, pid, year) {
@@ -142,5 +286,4 @@ export function getCatById(cats, id) {
     }
   })
   return cat;
-
 }

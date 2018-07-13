@@ -1,17 +1,14 @@
 /**
  * Created by Administrator on 2018-07-13.
  */
-const groups = [
-  {
-    id: 'P',
-    en: 'Group P',
-    zh: '组P'
-  },
-  {
-    id: 'H',
-    en: 'Group H',
-    zh: '组H'
-  }
-]
 
+const list = ['P','H','E','M']
+const groups = list.map(c => {
+  return {
+    id: c,
+    en: 'Group ' + c,
+    zh: '组' + c
+  }
+})
+ 
 export default groups;

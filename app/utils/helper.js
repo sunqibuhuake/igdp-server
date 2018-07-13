@@ -88,9 +88,15 @@ export default {
     })
     return name;
   },
-  getCityPrimaryData: (city_index) => {
+  getMax: (arr) => {
+    let max = 0;
+    arr.forEach(n => {
+      if (n > max) {
+        max = n;
+      }
+    })
 
+    return max;
   },
-
 
 }
