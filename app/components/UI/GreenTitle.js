@@ -5,12 +5,13 @@ import React from 'react'
 export default function(props) {
   return (
     <div style={{
-      fontSize: 18,
+      fontSize: 22,
       color: '#009944',
-      lineHeight: 2,
-      marginBottom: 18
+      lineHeight: 1.5,
+      marginBottom: 36,
+      ...props.style
     }}>
-      {props.text}
+      {props.children}
     </div>
   )
 }

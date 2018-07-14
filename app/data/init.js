@@ -3,6 +3,9 @@
  */
 export default {
   language: 'en',
+  page1: {
+    secondary_cat: 1,
+  },
   page2: {
     filter: {
       region: 'all',

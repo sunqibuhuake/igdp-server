@@ -11,6 +11,12 @@
   height: 100%;
   width: 4px;
   background: green;
+}
 
-
+.col-1-7 {
+  width: 14.28%;
+  display: block;
+  float: left;
+  position: relative;
+  height: auto;
 }

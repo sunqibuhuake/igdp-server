@@ -13,6 +13,7 @@ import helper from '../../utils/helper'
 import {
   makeSelectLang,
   makeSelectLocation,
+  makeSelectPage1,
   makeSelectPage2,
   makeSelectPage3
   //makeSelectValue
@@ -23,6 +24,7 @@ import { switchLanguage, setValue } from '../App/actions';
 import Page1 from '../Page1'
 import Page2 from '../Page2'
 import Page3 from '../Page3'
+import Page4 from '../Page4'
 
 export class Home extends React.PureComponent {
 
@@ -67,6 +69,8 @@ export class Home extends React.PureComponent {
         <Page1 {...this.props}></Page1>
         <Page2 {...this.props}></Page2>
         <Page3 {...this.props}></Page3>
+        <Page4></Page4>
+
 
       </div>
     );
@@ -84,7 +88,8 @@ const mapStateToProps = createStructuredSelector({
   lang: makeSelectLang(),
   location: makeSelectLocation(),
   page2: makeSelectPage2(),
-  page3: makeSelectPage3()
+  page3: makeSelectPage3(),
+  page1: makeSelectPage1()
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
