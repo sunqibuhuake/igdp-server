@@ -4,7 +4,25 @@ import secondary_cats from '../data/secondary_cat'
 import primary_cats from '../data/primary_cat'
 import city_list from '../data/cities'
 
+export function getSpecBarData(arr) {
+  return arr.map(item => {
+    return {
+      name: item.name,
+      value: (item.list[1].value - item.list[0].value).toFixed(2)
+    }
+  })
+}
+export function getScatterData(sid, year, lang) {
+  const arr = [];
+  city_list.forEach(city => {
+    const city_index = city.id;
+    const x = getSecondaryData(city_index, sid, year).value
+    const y = getScore(city_index, year);
+    arr.push([x,y])
+  })
+  return arr;
 
+}
 export function filterIndicatorScoreByYear(sid, lang) {
   const list = getIndicatorList(sid, 'sid')
   const result = {}
@@ -442,4 +460,14 @@ export function getCatById(cats, id) {
     }
   })
   return cat;
+}
+
+
+export function getScore(city_index,year) {
+  let sum = 0;
+  const city_indicators = getCityDetail(city_index);
+  for(let ind in city_indicators) {
+    sum += (city_indicators[ind][year] - 0)
+  }
+  return sum;
 }

@@ -5,10 +5,14 @@ import React from 'react'
 import helper from '../../utils/helper'
 import {
   getSecondaryScoreByYear,
-  filterIndicatorScoreByYear
+  filterIndicatorScoreByYear,
+  getScatterData,
+getSpecBarData
 
 } from '../../utils/calc'
 import Line from '../../components/Chart/Line'
+import Scatter from '../../components/Chart/Scatter'
+import SpecBar from '../../components/Chart/SpecBar'
 import {Row, Col} from 'antd'
 
 export default class Mid extends React.PureComponent {
@@ -19,6 +23,8 @@ export default class Mid extends React.PureComponent {
 
     const secondaryLineData = getSecondaryScoreByYear(sid, lang)
     const indicatorLineData = filterIndicatorScoreByYear(sid, lang)
+    const scatterData = getScatterData(sid, year, lang)
+    const specData = getSpecBarData(indicatorLineData)
 
     return (
       <div>
@@ -33,9 +39,9 @@ export default class Mid extends React.PureComponent {
 
         <Col span={12}>
           <div style={{height: 240}}>
-            <Line
-              data={secondaryLineData}
-            ></Line>
+            <Scatter
+              data={{list: scatterData}}
+            ></Scatter>
           </div>
         </Col>
       </Row>
@@ -50,9 +56,9 @@ export default class Mid extends React.PureComponent {
 
           <Col span={12}>
             <div style={{height: 360}}>
-              <Line
-                data={indicatorLineData}
-              ></Line>
+              <SpecBar
+                data={specData}
+              ></SpecBar>
             </div>
           </Col>
         </Row>
