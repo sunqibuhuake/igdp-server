@@ -74,6 +74,96 @@ export default class Page2 extends React.PureComponent {
           </p>
         </div>
 
+
+        <div>
+          <p>
+            An Online Tool to Explore LOGIC Results Deeper
+          </p>
+          <p>
+            This website allows you to interactively explore the city data and LOGIC scores. Use the
+            buttons below to navigate to the different functions and data views for the online LOGIC tool.
+          </p>
+
+          <p>
+            Explore the relative performance of the LOGIC categories/indicators
+          </p>
+          <p>
+            Examine and compare performance of cities “grouped” by: city size, city economy,
+            geography, and low-carbon pilot status
+          </p>
+
+          <p>
+            Explore LOGIC results for an individual city
+          </p>
+
+          <p>
+            See the LOGIC results any of the 115 cities, across 7 categories, and 23 indicators from 2010
+            to 2015
+          </p>
+
+          <p>
+            Compare LOGIC results from multiple cities
+          </p>
+          <p>
+            Select two or more cities to compare LOGIC scores across categories, indicators, and for
+            different years
+
+          </p>
+
+          <p>
+            Explore average LOGIC scores for different types of cities
+          </p>
+          <p>
+            Examine and compare performance of cities “grouped” by: city size, city economy,
+            geography, and low-carbon pilot status
+
+          </p>
+
+
+
+        </div>
+
+        <div>
+          <p>
+            Learn About the LOGIG Methodology and Team
+            Methodology
+
+
+            LOGIC is a composite index, with a maximum score of 100.
+            LOGIC is made up of seven green & low carbon categories/sub-categories:
+
+
+            Energy & Carbon Category – with sub-categories of: Energy & Power , Industry ,
+            Buildings , and Transport
+
+            Economic Dimension Category
+
+
+            Environment & Land Use Category
+
+            Policy & Outreach Category
+
+            Data is collected from 115 cities in China, for a total of 23 indicators.
+            The indicators are defined with three types of performance
+            benchmarks (i.e. international best practice, China national target, or
+            as city relative ranking). The categories and indicators are weighted
+            for relative importance; and then combined to calculate an overall
+            index score for each city.
+
+
+            Learn more about the LOGIC methodology by clicking here.
+
+            About the LOGIC Team
+
+            LOGIC was developed in partnership with iGDP, LBNL, and with funding
+            support from the Energy Foundation China.
+
+            Learn more about the LOGIC team by clicking here.
+
+
+          </p>
+        </div>
+
       </Container>
 
     )
