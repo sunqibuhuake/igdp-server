@@ -10,9 +10,9 @@ import {
   getPrimaryLineData,
   getAllSecondaryLineData,
   getAllIndicatorLineData,
-getSecondaryAvg,
-getSecondaryMax,
-getSecondaryMin
+  getSecondaryAvg,
+  getSecondaryMax,
+  getSecondaryMin
 } from '../../utils/calc'
 import NormalBar from '../../components/Chart/NormalBar'
 import StackBar from '../../components/Chart/StackBar'
@@ -51,8 +51,8 @@ export default class Meta extends React.PureComponent {
 
         <div style={{height: 400}}>
           <NormalBar
-          data={secondaryData}
-        ></NormalBar>
+            data={secondaryData}
+          ></NormalBar>
         </div>
 
 

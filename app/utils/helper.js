@@ -8,7 +8,8 @@ import group_options from '../data/filter/groups'
 import region_options from '../data/filter/regions'
 import pilot_options from '../data/filter/pilotStatus'
 import size_options from '../data/city_size'
-import primary_cat from '../data/primary_cat'
+import primary_cats from '../data/primary_cat'
+import secondary_cats from '../data/secondary_cat'
 export default {
   getOptionNameById: (id, options)=> {
     let name = '?';
@@ -98,5 +99,14 @@ export default {
 
     return max;
   },
+  getSecondaryCatName: (sid, lang) => {
+    let name = '?';
+    secondary_cats.forEach(cat => {
+      if (cat.id == sid) {
+        name = cat[lang]
+      }
+    })
+    return name;
+  }
 
 }

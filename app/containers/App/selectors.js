@@ -16,6 +16,11 @@ const makeSelectPage2 = () => createSelector(
   selectGlobal,
   (state) => state.get('page2').toJS()
 );
+const makeSelectPage3 = () => createSelector(
+  selectGlobal,
+  (state) => state.get('page3').toJS()
+);
+
 
 
 const makeSelectLang = () => createSelector(
@@ -31,5 +36,6 @@ export {
   makeSelectLocation,
   makeSelectLang,
   makeSelectPage2,
+  makeSelectPage3
   //makeSelectValue
 };

@@ -2,7 +2,7 @@
  * Created by AA on 2018/7/13.
  */
 export default {
-  p: 'green',
+  p: '#6ab131',
   s: 'rgb(200,200,200)',
   list: [
     '#7dce9f',

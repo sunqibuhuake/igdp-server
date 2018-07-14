@@ -14,12 +14,14 @@ import {
   makeSelectLang,
   makeSelectLocation,
   makeSelectPage2,
+  makeSelectPage3
   //makeSelectValue
 } from '../App/selectors';
 
 import { switchLanguage, setValue } from '../App/actions';
 
 import Page2 from '../Page2'
+import Page3 from '../Page3'
 
 export class Home extends React.PureComponent {
 
@@ -62,6 +64,8 @@ export class Home extends React.PureComponent {
     return (
       <div>
         <Page2 {...this.props}></Page2>
+        <Page3 {...this.props}></Page3>
+
       </div>
     );
   }
@@ -77,7 +81,8 @@ export function mapDispatchToProps(dispatch) {
 const mapStateToProps = createStructuredSelector({
   lang: makeSelectLang(),
   location: makeSelectLocation(),
-  page2: makeSelectPage2()
+  page2: makeSelectPage2(),
+  page3: makeSelectPage3()
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);

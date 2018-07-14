@@ -10,5 +10,5 @@ const groups = list.map(c => {
     zh: '组' + c
   }
 })
- 
+
 export default groups;

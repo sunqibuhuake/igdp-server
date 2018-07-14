@@ -4,6 +4,152 @@ import secondary_cats from '../data/secondary_cat'
 import primary_cats from '../data/primary_cat'
 import city_list from '../data/cities'
 
+
+export function filterIndicatorScoreByYear(sid, lang) {
+  const list = getIndicatorList(sid, 'sid')
+  const result = {}
+  const mapHelper = arr2obj(list);
+  city_list.map(city => {
+    const city_index = city.id;
+    const city_indicators = getCityDetail(city_index);
+    const filtered = filterCityDetail(mapHelper, city_indicators, false);
+    for(let ind in filtered) {
+      if (!result[ind]) {
+        result[ind] = {
+          value2010: 0,
+          value2015: 0
+        }
+      }
+      result[ind].value2010 += (filtered[ind]['2010'] - 0)
+      result[ind].value2015 += (filtered[ind]['2015'] - 0)
+    }
+  })
+  const arr = []
+  for (let ind in result) {
+    arr.push({
+      name: getIndicatorMeta(ind).name[lang],
+      list: [
+        {
+          value: (result[ind].value2010 / city_list.length).toFixed(2)
+        },
+        {
+          value: (result[ind].value2015 / city_list.length).toFixed(2)
+        }
+      ]
+    })
+  }
+  return arr;
+}
+export function getSecondaryScoreByYear(sid, lang) {
+  const list = getIndicatorList(sid, 'sid')
+  let value2010 = 0;
+  let value2015 = 0;
+  const mapHelper = arr2obj(list);
+  city_list.map(city => {
+    const city_index = city.id;
+    const city_indicators = getCityDetail(city_index);
+    const filtered = filterCityDetail(mapHelper, city_indicators, false);
+    for(let ind in filtered) {
+      value2010 += (filtered[ind]['2010'] - 0)
+      value2015 += (filtered[ind]['2015'] - 0)
+    }
+  })
+  return [
+    {
+      name: getSecondaryMeta(sid)[lang],
+      list: [
+        {
+          value: (value2010 / city_list.length).toFixed(2)
+        },
+        {
+          value: (value2015 / city_list.length).toFixed(2)
+        }
+      ]
+    }
+  ]
+}
+export function getFilteredIndicatorAvg(sid, year, lang) {
+  const list = getIndicatorList(sid, 'sid')
+  const result = {}
+  const mapHelper = arr2obj(list);
+  city_list.map(city => {
+    const city_index = city.id;
+    const city_indicators = getCityDetail(city_index);
+    const filtered = filterCityDetail(mapHelper, city_indicators, year);
+    for(let ind in filtered) {
+      if (!result[ind]) {
+        result[ind] = 0;
+      }
+      result[ind] += (filtered[ind] - 0)
+    }
+  })
+  const arr = []
+  for (let ind in result) {
+    const value = (result[ind] / city_list.length).toFixed(2)
+    arr.push({
+      name: getIndicatorMeta(ind).name[lang],
+      value: value,
+      gap: (getIndicatorMax(ind, year) - value).toFixed(2)
+    })
+  }
+  return arr;
+}
+
+export function getIndicatorMax(ind, year) {
+  let max = 0;
+  detail.forEach(d => {
+    for(let name in d.indicators) {
+
+      if (name == ind) {
+        const value = d.indicators[name][year]
+        if (value > max) {
+          max = value
+        }
+
+      }
+    }
+  })
+  return max
+}
+
+export function filterCityDetail(helper, obj, year) {
+  const result = {}
+  for(let ind in obj) {
+    if (helper[ind]) {
+      if (year) {
+        result[ind] = obj[ind][year];
+      } else {
+        result[ind] = obj[ind]
+      }
+    }
+  }
+  return result
+}
+
+export function getSecondaryFreq(sid, year) {
+  const arr = []
+  city_list.forEach( city => {
+    const city_index = city.id;
+    const item = getSecondaryData(city_index,sid, year)
+    const index = ~~(item.value / 1.5)
+    if (!arr[index]) {
+      arr[index] = 1;
+    } else {
+      arr[index] += 1;
+    }
+  })
+  for (let i = 0; i < arr.length; i++) {
+    if (!arr[i]) {
+      arr[i] = 0;
+    }
+  }
+  return arr.map((n, i) => {
+    return {
+      name: (i + 1) * 1.5,
+      value: n
+    }
+  })
+}
 export function getSecondaryAvg(lang, year) {
   let arr = []
   city_list.forEach( city => {
@@ -168,6 +314,16 @@ export function getIndicatorMeta(ind) {
   let obj = {}
   indicators.forEach( item => {
     if (item.id == ind) {
+      obj = item;
+    }
+  })
+  return obj;
+}
+
+export function getSecondaryMeta(sid) {
+  let obj = {}
+  secondary_cats.forEach( item => {
+    if (item.id == sid) {
       obj = item;
     }
   })
