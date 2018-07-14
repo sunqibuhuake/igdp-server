@@ -5,7 +5,7 @@ import Title from '../../components/UI/Title'
 import GreenTitle from '../../components/UI/GreenTitle'
 import BlackTitle from '../../components/UI/BlackTitle'
 import BlackText from '../../components/UI/BlackText'
-
+import Banner from '../../components/UI/Banner'
 import helper from '../../utils/helper'
 import './style.css'
 export default class Page2 extends React.PureComponent {
@@ -14,14 +14,24 @@ export default class Page2 extends React.PureComponent {
 
   render() {
     return (
-      <Container style={{background: 'white', padding: '24px 0'}}>
-
-        <div>
+      <div style={{background: 'white', width: '100%'}}>
+        <Banner>
           <Title>
             China LOGIC Index
           </Title>
-          <GreenTitle>
+          <div style={{fontSize: 18, lineHeight: 2, color: '#6ab131'}}>
             Low-Carbon & Green Index for Cities (LOGIC)
+          </div>
+        </Banner>
+
+        <Container>
+
+        </Container>
+
+        <div>
+
+          <GreenTitle>
+
           </GreenTitle>
           <BlackText>
             “LOGIC” is a new city index system and analytical tool designed to measure
@@ -164,7 +174,7 @@ export default class Page2 extends React.PureComponent {
           </p>
         </div>
 
-      </Container>
+      </div>
 
     )
   }
