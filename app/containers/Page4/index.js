@@ -7,6 +7,16 @@ import BlackTitle from '../../components/UI/BlackTitle'
 import BlackText from '../../components/UI/BlackText'
 import CountItem from '../../components/UI/CountItem'
 import List from './List'
+
+import tri_img from './assets/tri.png'
+import chart1_img from './assets/chart1.png'
+import chart2_img from './assets/chart2.png'
+import chart3_img from './assets/chart3.png'
+import chart4_img from './assets/chart4.png'
+import chart5_img from './assets/chart5.png'
+import chart6_img from './assets/chart6.png'
+import chart7_img from './assets/chart7.png'
+
 import './style.css'
 export default class Page4 extends React.PureComponent {
 
@@ -97,23 +107,32 @@ export default class Page4 extends React.PureComponent {
           </GreenTitle>
         </Container>
 
-        <Container style={{padding: '48px 0', background: '#e6e6e6'}}>
+        <Container style={{padding: '48px 0', background: 'white'}}>
           <BlackTitle>
             Composite LOGIC Scores for 115 Chinese City
           </BlackTitle>
-          <BlackTitle>
+          <div style={{textAlign: 'center'}}>
+            <img src={tri_img} style={{width: 24}} />
+          </div>
+          <div>
+            <img src={chart1_img} style={{width: '100%', padding: '24px 0'}} />
+          </div>
+          <BlackTitle style={{marginBottom: 12}}>
             Explore Key Insights from the 2017LOGIC Results Below
           </BlackTitle>
           <GreenTitle style={{textAlign: 'center'}}>
             Overall Change in LOGIC Scores，2010-2015
           </GreenTitle>
+          <div style={{textAlign: 'center'}}>
+            <img src={tri_img} style={{width: 24}} />
+          </div>
         </Container>
 
 
 
         <Container style={{background: '#e6e6e6', padding: '48px 0'}}>
           <Row>
-            <Col span={16}>
+            <Col span={16} style={{paddingTop: 48}}>
               <GreenTitle>
                 China’s cities are getting greener
               </GreenTitle>
@@ -121,7 +140,8 @@ export default class Page4 extends React.PureComponent {
                 Overall green and low carbon index scores improved from 2010-2015
               </BlackText>
             </Col>
-            <Col span={8}>
+            <Col span={8} style={{textAlign: 'right'}}>
+              <img src={chart2_img} style={{width: '80%'}} />
 
             </Col>
           </Row>
@@ -129,8 +149,8 @@ export default class Page4 extends React.PureComponent {
 
         <Container style={{background: 'white', padding: '48px 0'}}>
           <Row>
-            <Col span={12}>
-
+            <Col span={12} style={{textAlign: 'left'}}>
+              <img src={chart3_img} style={{width: '80%'}} />
             </Col>
             <Col span={12}>
               <GreenTitle style={{textAlign: 'right'}}>
@@ -178,7 +198,8 @@ export default class Page4 extends React.PureComponent {
               not come at the expense of the economy.
             </BlackText>
           </Col>
-          <Col span={12} style={{paddingTop: 120, textAlign: 'center'}}>
+          <Col span={12} style={{paddingTop: 48, textAlign: 'center'}}>
+            <img src={chart4_img} style={{width: '80%'}} />
 
           </Col>
         </Row>
@@ -191,7 +212,8 @@ export default class Page4 extends React.PureComponent {
             But Chinese Cities Still Have Significant Potential to Improve
           </GreenTitle>
           <Row>
-            <Col span={12} style={{paddingTop: 120, textAlign: 'center'}}>
+            <Col span={12} style={{paddingTop: 36, textAlign: 'center'}}>
+              <img src={chart5_img} style={{width: '92%'}} />
             </Col>
             <Col span={12}>
               <BlackText>
@@ -225,7 +247,7 @@ export default class Page4 extends React.PureComponent {
           </BlackTitle>
 
           <Row>
-            <Col span={16}>
+            <Col span={14}>
               <GreenTitle>
                 China's Low-Carbon Pilot Cities Are Leading
                 the Way
@@ -246,7 +268,8 @@ export default class Page4 extends React.PureComponent {
                 goals.
               </BlackText>
             </Col>
-            <Col span={8} style={{paddingTop: 24, textAlign: 'right'}}>
+            <Col span={10} style={{paddingTop: 24, textAlign: 'right'}}>
+              <img src={chart6_img} style={{width: '60%'}} />
 
             </Col>
           </Row>
@@ -259,7 +282,7 @@ export default class Page4 extends React.PureComponent {
 
           <Row>
             <Col span={8} style={{paddingTop: 24, textAlign: 'left'}}>
-
+              <img src={chart7_img} style={{width: '75%'}} />
             </Col>
             <Col span={16}>
               <GreenTitle>

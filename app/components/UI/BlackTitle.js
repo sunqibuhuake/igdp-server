@@ -10,7 +10,9 @@ export default function(props) {
       lineHeight: 3,
       fontWeight: 'bold',
       textAlign: 'center',
-      marginBottom: 24
+      marginBottom: 24,
+      ...props.style
+
     }}>
       {props.children}
     </div>
