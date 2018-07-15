@@ -3,6 +3,46 @@ import detail from '../data/detail'
 import secondary_cats from '../data/secondary_cat'
 import primary_cats from '../data/primary_cat'
 import city_list from '../data/cities'
+import pos from '../data/pos'
+
+
+export function getTotalPosData(year, lang) {
+  const arr = [];
+  city_list.forEach(city => {
+    const city_index = city.id;
+    const score = getScore(city_index, year)
+    arr.push({
+      name: city.name[lang],
+      value: [
+        pos[city_index][1],
+        pos[city_index][0],
+        score
+      ]
+    })
+  })
+  return arr;
+
+}
+
+
+export function getPosData(sid, year, lang) {
+  const arr = [];
+  city_list.forEach(city => {
+    const city_index = city.id;
+    const score = getSecondaryData(city_index, sid, year).value
+    arr.push({
+      name: city.name[lang],
+      value: [
+        pos[city_index][1],
+        pos[city_index][0],
+        score
+      ]
+    })
+  })
+  return arr;
+
+}
+
 
 export function getSpecBarData(arr) {
   return arr.map(item => {

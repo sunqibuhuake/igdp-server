@@ -17,12 +17,18 @@ import chart5_img from './assets/chart5.png'
 import chart6_img from './assets/chart6.png'
 import chart7_img from './assets/chart7.png'
 
+import Map from '../../components/Chart/Map'
+
+import {getTotalPosData} from '../../utils/calc'
+
 import './style.css'
 export default class Page4 extends React.PureComponent {
 
 
 
   render() {
+
+    const cityData = getTotalPosData(2015, this.props.lang)
     return (
       <div style={{background: 'white', width: '100%'}}>
         <Container style={{padding: '48px 0', background: 'white'}}>
@@ -49,6 +55,17 @@ export default class Page4 extends React.PureComponent {
               </BlackText>
             </Col>
             <Col span={10}>
+              <div style={{height: 480}}>
+                <Map
+                  data={{
+                    cities: cityData,
+                    color: '133, 193, 233'
+                  }}
+                >
+
+                </Map>
+
+              </div>
             </Col>
           </Row>
         </Container>

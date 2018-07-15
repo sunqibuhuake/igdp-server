@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import $ from 'jquery'
 import { createStructuredSelector } from 'reselect';
-import { 
+import {
   makeSelectLang,
   makeSelectLocation
 } from '../App/selectors'
@@ -27,17 +27,17 @@ class Header extends React.Component {
   componentDidMount() {
   }
   componentWillReceiveProps(np) {
- 
+
   }
 
   componentDidUpdate() {
-    
+
   }
- 
+
 
   render() {
 
- 
+
     return (
       <header className="header-box">
         <Container
@@ -59,15 +59,63 @@ class Header extends React.Component {
             </div>
             </div>
             </div>
-          
+
 
           </Col>
           <Col span={5}></Col>
         </Row>
 
         </Container>
-        <div className="conatiner"></div>
-  
+        <Container style={{background:'#6ab131'}}>
+          <Row style={{height: 72}} className="nav-btns">
+            <Col span={3} className="fh">
+              <div className="vertical-center">
+                <div className="tal" style={{width: '100%', color: 'white'}}>
+                  <span>Home</span>
+                </div>
+              </div>
+
+            </Col>
+            <Col span={15} className="fh">
+              <div className="vertical-center">
+                <Row style={{width: '100%'}}>
+                  <Col span={5}>
+                    <span>2017 LOGIC<br/>RESULTS</span>
+                  </Col>
+                  <Col span={5}>
+                    <span>RESULTS BY<br/>INDICATOR</span>
+                  </Col>
+                  <Col span={4}>
+                    <span>RESULTS<br/>BY CITY</span>
+                  </Col>
+                  <Col span={5}>
+                    <span>COMPARE<br/>CITIES</span>
+
+                  </Col>
+                  <Col span={5}>
+                    <span>RESULTS BY<br/>CITY GROUP</span>
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+
+            <Col span={6} className="fh">
+              <div className="vertical-center">
+                <Row style={{width:'100%'}}>
+                  <Col span={12}>
+                    <span>LOGIC<br/>METHODS</span>
+
+                  </Col>
+                  <Col span={12}>
+                    <span>ABOUT<br/>LOGIC</span>
+
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+
+          </Row>
+        </Container>
       </header>
     );
   }

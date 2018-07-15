@@ -6,6 +6,10 @@
   background: #ccc;
   width: 100%;
 }
+.nav-btns span{
+  color: white;
+  cursor: pointer;
+}
 .header-container {
   height: 160px;
   margin: 0;
