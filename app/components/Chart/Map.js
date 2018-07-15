@@ -87,7 +87,7 @@ export default class Map extends Component {
         },
         itemStyle: {
           normal: {
-            color: `rgba(${data.color},0.5)`,
+            color: data.spec ? data.color : `rgba(${data.color},0.5)`,
           }
         },
         symbolSize: function (val) {
@@ -95,10 +95,18 @@ export default class Map extends Component {
         },
         coordinateSystem: 'geo',
         data: data.cities.map(city => {
-          const opacity = (city.value[2] / max) + 0.2
-          city.itemStyle = {
-            normal: {
-              color: `rgba(${data.color},${opacity})`
+          if (!data.spec) {
+            const opacity = (city.value[2] / max) + 0.2
+            city.itemStyle = {
+              normal: {
+                color:  `rgba(${data.color},${opacity})`
+              }
+            }
+          } else {
+            city.itemStyle = {
+              normal: {
+                color: data.color
+              }
             }
           }
           return city

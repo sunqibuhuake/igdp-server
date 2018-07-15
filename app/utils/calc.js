@@ -5,7 +5,22 @@ import primary_cats from '../data/primary_cat'
 import city_list from '../data/cities'
 import pos from '../data/pos'
 
-
+export function getOneCityPos(city_index, lang) {
+  const arr = [];
+  city_list.forEach(city => {
+    if (city_index == city.id) {
+      arr.push({
+        name: city.name[lang],
+        value: [
+          pos[city_index][1],
+          pos[city_index][0],
+          0
+        ]
+      })
+    }
+  })
+  return arr;
+}
 export function getTotalPosData(year, lang) {
   const arr = [];
   city_list.forEach(city => {

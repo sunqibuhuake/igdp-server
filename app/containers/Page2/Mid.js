@@ -19,6 +19,7 @@ import StackBar from '../../components/Chart/StackBar'
 import Line from '../../components/Chart/Line'
 import Radar from '../../components/Chart/Radar'
 import {Row} from 'antd'
+import ChartContainer from '../../components/UI/ChartContainer'
 
 export default class Meta extends React.PureComponent {
   render() {
@@ -43,66 +44,84 @@ export default class Meta extends React.PureComponent {
     return (
       <div style={{padding: '0 12px'}}>
 
-        <div style={{height: 270}}>
-          <NormalBar
-            data={primaryData}
-          ></NormalBar>
-        </div>
 
-        <div style={{height: 400}}>
-          <NormalBar
-            data={secondaryData}
-          ></NormalBar>
-        </div>
+        <ChartContainer
+          title={(<span>Logic Scores VS. Maxium<br/><span style={{fontSize: 14, color: 'gray'}}>(Category, 2nd Category, Indicators)</span></span>)}
+        >
+          <div style={{height: 270, marginBottom: 24}}>
+            <NormalBar
+              data={primaryData}
+            ></NormalBar>
+          </div>
+          <div style={{height: 400, marginBottom:24}}>
+            <NormalBar
+              data={secondaryData}
+            ></NormalBar>
+          </div>
 
+          <div style={{height: 400, overflowY: 'scroll'}}>
+            <div style={{height: indicatorData.length  * 40}}>
+              <NormalBar
+                data={indicatorData}
+              ></NormalBar>
+            </div>
+          </div>
 
-        <div style={{height: indicatorData.length  * 40}}>
-          <NormalBar
-            data={indicatorData}
-          ></NormalBar>
-        </div>
+        </ChartContainer>
 
+        <ChartContainer
+          title="Logic Score Breakdown"
+        >
+          <div style={{height: 560}}>
+            <StackBar
+              year={this.props.page2.year}
+              data={secondaryData}
+            ></StackBar>
+          </div>
+        </ChartContainer>
 
-        <div style={{height: 600}}>
-          <StackBar
-            year={this.props.page2.year}
-            data={secondaryData}
-          ></StackBar>
-        </div>
+        <ChartContainer
+          title="Logic Score Change by Year"
+        >
+          <div style={{height: 360}}>
+            <Line
+              data={primaryLineData}
+            ></Line>
+          </div>
+        </ChartContainer>
 
-        <div style={{height: 600}}>
-          <Line
-            data={primaryLineData}
-          ></Line>
-        </div>
-
-
-        <div style={{height: 600}}>
-          <Line
-            data={secondaryLineData}
-          ></Line>
-        </div>
-
-
-        <div style={{height: 600}}>
-          <Line
-            data={indicatorLineData}
-          ></Line>
-        </div>
-
-        <div style={{height: 600}}>
-          <Radar
-            data={{
+        <ChartContainer
+          title="Logic Score Change by Year"
+        >
+          <div style={{height: 420}}>
+            <Line
+              data={secondaryLineData}
+            ></Line>
+          </div>
+        </ChartContainer>
+        <ChartContainer
+          title="Logic Score Change by Year"
+        >
+          <div style={{height: 420}}>
+            <Line
+              data={indicatorLineData}
+            ></Line>
+          </div>
+        </ChartContainer>
+        <ChartContainer
+          title="Logic Score Change by Year"
+        >
+          <div style={{height: 420}}>
+            <Radar
+              data={{
               max:secondaryMax,
               min:secondaryMin,
               avg:secondaryAvg,
               ratio: secondaryData
             }}
-          ></Radar>
-        </div>
-
-
-
+            ></Radar>
+          </div>
+        </ChartContainer>
 
       </div>
     )

@@ -22,6 +22,9 @@ import Map from '../../components/Chart/Map'
 import {getTotalPosData} from '../../utils/calc'
 
 import './style.css'
+
+import Footer from '../Footer'
+import Header from '../Header'
 export default class Page4 extends React.PureComponent {
 
 
@@ -31,6 +34,7 @@ export default class Page4 extends React.PureComponent {
     const cityData = getTotalPosData(2015, this.props.lang)
     return (
       <div style={{background: 'white', width: '100%'}}>
+        <Header></Header>
         <Container style={{padding: '48px 0', background: 'white'}}>
           <Row>
             <Col span={14}>
@@ -339,6 +343,8 @@ export default class Page4 extends React.PureComponent {
           <List></List>
 
         </Container>
+
+        <Footer></Footer>
 
 
 

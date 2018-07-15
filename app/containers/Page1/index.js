@@ -15,6 +15,8 @@ import table_img from './assets/page-1-2.png'
 
 import {getPosData} from '../../utils/calc'
 import color from '../../utils/color'
+import Footer from '../Footer'
+import Header from '../Header'
 import './style.css'
 export default class Page1 extends React.PureComponent {
 
@@ -27,6 +29,7 @@ export default class Page1 extends React.PureComponent {
 
     return (
       <div style={{background: 'white', width: '100%'}}>
+        <Header></Header>
         <Banner>
           <div className="vertical-center">
             <div>
@@ -195,6 +198,8 @@ export default class Page1 extends React.PureComponent {
           </Row>
 
         </Container>
+
+        <Footer></Footer>
 
       </div>
 

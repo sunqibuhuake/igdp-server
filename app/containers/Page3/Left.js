@@ -36,12 +36,18 @@ export default class Left extends React.PureComponent {
           {helper.getSecondaryCatName(secondary_cat, lang)}
         </div>
 
+
+        <div style={{fontSize: 18, color: 'black', padding: '36px 0 24px'}}>
+          Logic Score Breakdown
+        </div>
         <div style={{height: 400}}>
           <HBar
             data={freqData.reverse()}
           ></HBar>
         </div>
-
+        <div style={{fontSize: 18, color: 'black', padding: '36px 0 24px'}}>
+          Avg Score of Cities and Score Gap Avg by LabelName
+        </div>
         <div style={{height: 300 }}>
           <NormalBar
             data={avgIndicatorData}

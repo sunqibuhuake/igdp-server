@@ -53,6 +53,7 @@ export default class NormalBar extends React.PureComponent{
         left: '120',
         right: '12px',
         bottom: '24',
+        top: 12,
         containLabel: false
       },
       xAxis:  {

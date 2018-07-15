@@ -6,27 +6,34 @@ import Left from './Left'
 import Mid from './Mid'
 import helper from '../../utils/helper'
 import './style.css'
+
+import Footer from '../Footer'
+import Header from '../Header'
 export default class Page2 extends React.PureComponent {
 
 
 
   render() {
     return (
-      <Container style={{background: 'white', padding: '24px 0'}}>
+      <div>
+        <Header></Header>
+        <Container style={{background: 'white', padding: '24px 0'}}>
 
-        <Row>
-          <Col span={18}>
-            <Left {...this.props}></Left>
-          </Col>
-          <Col span={6}>
-            <Right {...this.props}></Right>
-          </Col>
-        </Row>
-        <Row>
-          <Mid {...this.props}></Mid>
-        </Row>
-      </Container>
+          <Row>
+            <Col span={18}>
+              <Left {...this.props}></Left>
+            </Col>
+            <Col span={6}>
+              <Right {...this.props}></Right>
+            </Col>
+          </Row>
+          <Row>
+            <Mid {...this.props}></Mid>
+          </Row>
+        </Container>
+        <Footer/>
 
+      </div>
     )
   }
 }

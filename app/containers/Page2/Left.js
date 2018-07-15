@@ -5,11 +5,13 @@ import React from 'react'
 import helper from '../../utils/helper'
 import MetaItem from '../../components/MetaItem'
 import {Row} from 'antd'
+import Map from '../../components/Chart/Map'
+import {getOneCityPos} from '../../utils/calc'
 export default class Meta extends React.PureComponent {
   render() {
     const lang = this.props.lang;
     const city_index = this.props.page2.city_index
-
+    const cityPosData = getOneCityPos(city_index, lang)
     const meta = helper.getCityMeta(this.props.page2.city_index)
     const city_region_code = meta.region
     const city_pilot_code = meta.status;
@@ -62,6 +64,18 @@ export default class Meta extends React.PureComponent {
       <div>
         <div>
           {meta.name[lang]}
+        </div>
+
+        <div  style={{height: 320}}>
+          <Map
+            data={{
+              color: 'red',
+              cities: cityPosData,
+              spec: true
+            }}
+          >
+
+          </Map>
         </div>
         <div className="meta-groups">
           <Row>

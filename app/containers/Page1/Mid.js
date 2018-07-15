@@ -18,6 +18,8 @@ import NormalBar from '../../components/Chart/NormalBar'
 import StackBar from '../../components/Chart/StackBar'
 import Line from '../../components/Chart/Line'
 import Radar from '../../components/Chart/Radar'
+
+import ChartContainer from '../../components/UI/ChartContainer'
 import {Row} from 'antd'
 
 export default class Meta extends React.PureComponent {
@@ -43,24 +45,28 @@ export default class Meta extends React.PureComponent {
     return (
       <div style={{padding: '0 12px'}}>
 
-        <div style={{height: 270}}>
-          <NormalBar
-            data={primaryData}
-          ></NormalBar>
-        </div>
+        <ChartContainer
+          title={(<span>Logic Scores VS. Maxium</span>)}
+        >
+          <div style={{height: 270}}>
+            <NormalBar
+              data={primaryData}
+            ></NormalBar>
+          </div>
 
-        <div style={{height: 400}}>
-          <NormalBar
-            data={secondaryData}
-          ></NormalBar>
-        </div>
+          <div style={{height: 400}}>
+            <NormalBar
+              data={secondaryData}
+            ></NormalBar>
+          </div>
+          <div style={{height: indicatorData.length  * 40}}>
+            <NormalBar
+              data={indicatorData}
+            ></NormalBar>
+          </div>
 
+        </ChartContainer>
 
-        <div style={{height: indicatorData.length  * 40}}>
-          <NormalBar
-            data={indicatorData}
-          ></NormalBar>
-        </div>
 
 
         <div style={{height: 600}}>

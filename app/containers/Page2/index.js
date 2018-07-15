@@ -7,27 +7,34 @@ import Mid from './Mid'
 
 import helper from '../../utils/helper'
 import './style.css'
+
+import Footer from '../Footer'
+import Header from '../Header'
 export default class Page2 extends React.PureComponent {
 
 
 
   render() {
     return (
-      <Container style={{background: 'white', padding: '24px 0'}}>
+      <div>
+        <Header/>
+        <Container style={{background: 'white', padding: '24px 0'}}>
 
-        <Row>
-          <Col span={6}>
-            <Left {...this.props}></Left>
-          </Col>
-          <Col span={12}>
-            <Mid {...this.props}></Mid>
-          </Col>
-          <Col span={6}>
-            <Right {...this.props}></Right>
-          </Col>
-        </Row>
-      </Container>
+          <Row>
+            <Col span={6}>
+              <Left {...this.props}></Left>
+            </Col>
+            <Col span={12}>
+              <Mid {...this.props}></Mid>
+            </Col>
+            <Col span={6}>
+              <Right {...this.props}></Right>
+            </Col>
+          </Row>
+        </Container>
+        <Footer/>
 
+      </div>
     )
   }
 }
