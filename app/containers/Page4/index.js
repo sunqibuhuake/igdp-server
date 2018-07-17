@@ -19,6 +19,8 @@ import chart7_img from './assets/chart7.png'
 
 import Map from '../../components/Chart/Map'
 
+import Legend from '../../components/UI/Legend'
+
 import {getTotalPosData} from '../../utils/calc'
 
 import './style.css'
@@ -30,6 +32,37 @@ export default class Page4 extends React.PureComponent {
 
 
   render() {
+
+    const legendList = [
+      {
+        color: '#F8C370',
+        text: 'Enery & Power'
+      },
+      {
+        color: '#F19489',
+        text: 'Economic Dimension'
+      },
+      {
+        color: '#F7DC6E',
+        text: 'Industry'
+      },
+      {
+        color: '#85C1E9',
+        text: 'Environment & Land Use'
+      },
+      {
+        color: '#7DCE9F',
+        text: 'Transportation'
+      },
+      {
+        color: '#C39BD1',
+        text: 'Policy Dimension'
+      },
+      {
+        color: '#76D7C3',
+        text: 'Building'
+      }
+    ]
 
     const cityData = getTotalPosData(2015, this.props.lang)
     return (
@@ -90,6 +123,9 @@ export default class Page4 extends React.PureComponent {
                 name="Index Categories"
               >
               </CountItem>
+              <div>
+                <Legend data={legendList}></Legend>
+              </div>
             </Col>
             <Col span={8}>
               <CountItem
