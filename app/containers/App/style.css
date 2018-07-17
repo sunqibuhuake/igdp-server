@@ -95,3 +95,27 @@ html, body {
   position: relative;
   padding-right: 12px;
 }
+
+.activeNavBtn::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: white;
+  bottom: -6px;
+  left: 0;
+}
+.normalNavBtn{
+  position: relative;
+
+}
+
+.normalNavBtn:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: white;
+  bottom: -6px;
+  left: 0;
+}

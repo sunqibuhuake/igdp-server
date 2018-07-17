@@ -109,7 +109,7 @@ export default class Meta extends React.PureComponent {
           </div>
         </ChartContainer>
         <ChartContainer
-          title="Logic Score Change by Year"
+          title="Logic Score Breakdown"
         >
           <div style={{height: 420}}>
             <Radar

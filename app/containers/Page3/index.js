@@ -16,7 +16,6 @@ export default class Page2 extends React.PureComponent {
   render() {
     return (
       <div>
-        <Header></Header>
         <Container style={{background: 'white', padding: '24px 0'}}>
 
           <Row>

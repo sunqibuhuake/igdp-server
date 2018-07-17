@@ -29,8 +29,6 @@ import Page4 from '../Page4'
 export class Home extends React.PureComponent {
 
 
-
-
   componentDidMount() {
 
   }
@@ -50,30 +48,44 @@ export class Home extends React.PureComponent {
 
   render() {
 
-    const styles = {
-      root: {
-        padding: 0,
-        margin: 0
-      }
+    const pathname = this.props.history.location.pathname;
+    if (pathname == '/') {
+      return (
+        <div>
+          <Page1 {...this.props}></Page1>
+        </div>
+      )
     }
 
-    const page2Props = {
-      lang:　this.props.lang,
-      location: this.props.location,
-      page2: this.props.page2
+    if (pathname == '/results') {
+
+      return (
+        <div>
+          <Page4></Page4>
+        </div>
+      )
+
     }
 
+    if (pathname == '/indicators') {
 
-    return (
-      <div>
-        <Page1 {...this.props}></Page1>
-        <Page2 {...this.props}></Page2>
-        <Page3 {...this.props}></Page3>
-        <Page4></Page4>
+      return (
+        <div>
+          <Page3 {...this.props}></Page3>
+        </div>
+      )
 
+    }
 
-      </div>
-    );
+    if (pathname == '/city') {
+      return (
+        <div>
+          <Page2 {...this.props}></Page2>
+        </div>
+      )
+
+    }
+
   }
 }
 

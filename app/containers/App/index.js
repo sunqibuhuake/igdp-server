@@ -15,9 +15,15 @@ import './style.css'
 export default function App(props) {
   return (
     <FetchWrapper>
+
       <div className="sq-container">
+
+        <Header {...props}></Header>
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route exact path="/city" component={Home}/>
+          <Route exact path="/results" component={Home}/>
+          <Route exact path="/indicators" component={Home}/>
         </Switch>
       </div>
     </FetchWrapper>

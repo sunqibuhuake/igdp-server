@@ -29,7 +29,6 @@ export default class Page1 extends React.PureComponent {
 
     return (
       <div style={{background: 'white', width: '100%'}}>
-        <Header></Header>
         <Banner>
           <div className="vertical-center">
             <div>
