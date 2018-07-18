@@ -83,11 +83,13 @@ export default class Page4 extends React.PureComponent {
               </GreenTitle>
               <div style={{height: 36}}></div>
               <BlackText>
-                “LOGIC” is a new city index system and analytical tool designed to measure
-                and inform China’s progress on improved solutions for low carbon and clean
-                energy development, and early caarbon peaking.
+                Results from the report on China Green Low-Carbon City Index (LOGIC)
                 <br/>
-                Use this website and online tool to explore the LOGIC results of China’s cities.
+                In 2017, iGDP collected data from 115 cities across China using 23 low-carbon & green performance indicators. These data were compiled into a composite LOGIC score for each city. LOGIC scores were calculated for 2010 and 2015, which allows tracking China’s green and low-carbon progress over time.
+                <br/>
+
+                This page presents a summary of the key findings and recommendations from the 2017 LOGIC report produced by iGDP. Download the full report by clicking the link on the right.
+
               </BlackText>
             </Col>
             <Col span={10}>
@@ -214,13 +216,7 @@ export default class Page4 extends React.PureComponent {
                 improvements from 2010 to 2015
               </GreenTitle>
               <BlackText>
-                The average overall index score across all of China’s citiesgrew 2.5 points , or 6.6% , from 2010  to 2015.
-                <br/>
-                <br/>
-
-                In aggregate ,  cities of all types saw growth in their averageoverall   scores － ecomomic  groups ,   size groupsand pilot groups all saw LOGIC score growth, ranging from 4% to 13%，respectively. China’s large “Mega”cities,“Post-Industrial”cities,and Low-Carbon
-                <br/>
-                Pilotcities performed particularly well over this period.
+                In aggregate, cities of all types saw growth in their average overall scores – the economic groups, size groups, geographic regions, and low-carbon pilot groups all saw LOGIC score growth, ranging from +4% to +13%. China’s large “Mega” cities, “Post-Industrial” cities, and Low-Carbon Pilot cities performed particularly well over this period.
 
               </BlackText>
 
@@ -262,7 +258,7 @@ export default class Page4 extends React.PureComponent {
       </Container>
         <Container style={{background: 'white', padding: '48px 0'}}>
           <BlackTitle>
-            LOGIC Scores by category
+            LOGIC Scores by Category / Sub-Category
           </BlackTitle>
           <GreenTitle style={{textAlign: 'center'}}>
             But Chinese Cities Still Have Significant Potential to Improve
@@ -274,23 +270,10 @@ export default class Page4 extends React.PureComponent {
             <Col span={12}>
               <BlackText>
                 Green & low-carbon performance on average
-                reaches 45% of LOGIC potential.
+                reaches 45% of LOGIC maximum.
                 <br/>
                 <br/>
-                While LOGIC scores and economies have both
-                grown in recent years, the average overall
-                index score for all Chinese cities in 2015 is still
-                only 44.9, out of 100. Chinese cities have
-                room to improve. Yet, some cities did achieve
-                high scores; and those bestperforming cities
-                indicate a positive pathway for all cities to
-                catch up.
-                <br/>
-                And LOGIC by definition is ambitious–its
-                indicators are designed using world-class
-                green benchmarks and are intended to
-                push Chinese cities to do more, and quicker.
-
+                While LOGIC scores and economies have both grown in recent years, the average overall index score for all Chinese cities in 2015 is still only 44.8, out of 100. Chinese cities have room to improve. Of course, some cities achieved high LOGIC scores, and these best-performing cities provide a positive pathway for other cities to learn and catch up. And by definition LOGIC is an ambitious index – its indicators are designed using world-class green benchmarks and are intended to push Chinese cities to do more, and quicker.
               </BlackText>
             </Col>
 
@@ -299,7 +282,7 @@ export default class Page4 extends React.PureComponent {
 
         <Container style={{background: '#e6e6e6', padding: '48px 0'}}>
           <BlackTitle>
-            China’s Low Carbon Pilot Cities’ LOGIC Scores
+            LOGIC Scores for China’s Low-Carbon Pilot Cities
           </BlackTitle>
 
           <Row>
@@ -309,8 +292,7 @@ export default class Page4 extends React.PureComponent {
                 the Way
               </GreenTitle>
               <BlackText>
-                Pilot cities have higher LOGIC scores, and their scores are
-                improving faster.
+                pilot cities have higher LOGIC scores, and their scores are improving faster than non-pilot cities.
                 <br/>
                 <br/>
                 In 2015, average overall index sores for China's Low-Carbon
@@ -333,7 +315,7 @@ export default class Page4 extends React.PureComponent {
 
         <Container style={{background: 'white', padding: '48px 0'}}>
           <BlackTitle>
-            Change in Score Values for LOGIC Categories
+            Changing Scores for LOGIC Categories
           </BlackTitle>
 
           <Row>
@@ -342,27 +324,17 @@ export default class Page4 extends React.PureComponent {
             </Col>
             <Col span={16}>
               <GreenTitle>
-                Most LOGIC categories showed improvement
+                Most LOGIC categories’ average scores increased from 2010 to 2015.
               </GreenTitle>
               <BlackText>
-                in average scores over the fiveyear period from 2010 to 2015.
+                Only the Environment & Land Use category showed a decline — a drop of -0.6 points, or - 4.7% from 2010 to 2015. All other categories saw average score growth.
                 <br/>
                 <br/>
-                Most of the LOGIC categories and subcategories showed varying
-                degrees of improvement in average scores over the five-year period
-                from 2010 to 2015. Only the Environment & Land Use category
-                showed a decline in average score (a drop of -0.6 points, or -4.7%
-                from 2010 to 2015). All other categories saw average score growth.
-                Figure 32 shows a slope-graph with score changes for each category
-                over this period. Table 8 shows a statistical summary of the category
-                changes.
+                While the Economic Dimension category had the lowest overall performance, this category had the highest growth (raising 1.2 points, or 29% from its 2010 value). Also notable is the Industry category, which increased 1.1 points (18.4%) from 2010.
                 <br/>
-                While it was observed earlier in the report that the Economic
-                Dimension category had the lowest overall performance in the index,
-                this category actually had the highest growth (raising 1.2 points, or
-                29% from its 2010 value).The Economy category improvement
-                contributed 46% of the total index score change. Also notable is the
-                Industry
+                <br/>
+                Other categories had more modest average score growth over the five year period.
+
 
               </BlackText>
             </Col>
@@ -374,6 +346,10 @@ export default class Page4 extends React.PureComponent {
           <BlackTitle>
             Recommendations for Chinese Policy Makers
           </BlackTitle>
+
+          <BlackText>
+            Based on the results from the 2017 LOGIC analysis tracking and comparing data from 115 Chinese cities and across 23 indicators, the authors at iGDP make the following recommendations for China to continue to improve and accelerate its transition toward green and low-carbon cities:
+          </BlackText>
 
           <List></List>
 

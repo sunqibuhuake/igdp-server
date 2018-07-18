@@ -70,7 +70,7 @@ export default class Meta extends React.PureComponent {
         </ChartContainer>
 
         <ChartContainer
-          title="Logic Score Breakdown"
+          title="LOGIC Score, Breakdown by Category"
         >
           <div style={{height: 560}}>
             <StackBar
@@ -81,7 +81,7 @@ export default class Meta extends React.PureComponent {
         </ChartContainer>
 
         <ChartContainer
-          title="Logic Score Change by Year"
+          title="LOGIC Score, Change by Year"
         >
           <div style={{height: 360}}>
             <Line
@@ -91,7 +91,7 @@ export default class Meta extends React.PureComponent {
         </ChartContainer>
 
         <ChartContainer
-          title="Logic Score Change by Year"
+          title="LOGIC Categories, Change by Year"
         >
           <div style={{height: 420}}>
             <Line
@@ -100,7 +100,7 @@ export default class Meta extends React.PureComponent {
           </div>
         </ChartContainer>
         <ChartContainer
-          title="Logic Score Change by Year"
+          title="LOGIC Indicators, Change by Year"
         >
           <div style={{height: 420}}>
             <Line
@@ -109,7 +109,7 @@ export default class Meta extends React.PureComponent {
           </div>
         </ChartContainer>
         <ChartContainer
-          title="Logic Score Breakdown"
+          title="City Performance Across Categories"
         >
           <div style={{height: 420}}>
             <Radar

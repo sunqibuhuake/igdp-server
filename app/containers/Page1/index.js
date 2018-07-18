@@ -38,10 +38,13 @@ export default class Page1 extends React.PureComponent {
               <div style={{fontSize: 18, lineHeight: 2, color: '#6ab131'}}>
                 Low-Carbon & Green Index for Cities (LOGIC)
               </div>
+              <br/>
+
               <div style={{fontSize: 14, lineHeight: 2, color: 'white', width: '60%'}}>
-                "LOGIC" is a new city index system and analytical tool designed to measure
-                and inform China’s progress on improved solutions for low carbon and clean
-                energy development, and early caarbon peaking.
+                “LOGIC” is a new city index system and analytical tool designed to measure and inform China’s progress on improved solutions for low-carbon and green development, including goals around clean energy and early carbon peaking.
+                <br/>
+                <br/>
+                LOGIC provides policymakers, researchers and investors in the fields of energy, environment, and low carbon planning to evaluate and track the progress and prospects for China’s transition to greener cities.
                 <br/>
                 <br/>
                 Use this website to see 2017 LOGIC Results and to Explore LOGIC Data.
@@ -61,21 +64,30 @@ export default class Page1 extends React.PureComponent {
               <GreenTitle>
                 Are China’s cities getting greener?
                 <br/>
-                Which cities, which aspects, and which policies
-                perform best?
+
+                Will Chinese cities achieve their low–carbon goals?
+                <br/>
+
+                Which cities, which aspects, and which policies perform best?
+
               </GreenTitle>
 
               <BlackText>
-                Find answers to these and other questions in the 2017 China
-                LOGIC Report, “Progress and Prospects: China’s Cities Transitioning
-                toward Energy Sustainability,and Pursuing Early Peaking of Carbon
-                Emissions”.
+                Find answers to these and other questions in the 2017 China LOGIC Report, “Progress and Prospects: China’s Cities Transitioning toward Energy Sustainability, and Pursuing Early Peaking of Carbon Emissions”.
                 <br/>
-                In 2017, iGDP collected data from 115 cities across China using 23
-                low-carbon & green performance indicators. These data were
-                compiled into a composite LOGIC score for each city.
-                Read the key insights and recommendations from the report on this
-                website (clickhere).
+                <br/>
+
+                In 2017, iGDP collected data from 115 cities across China using 23 low-carbon & green performance indicators. These data were compiled into a composite LOGIC score for each city. LOGIC scores were calculated for 2010 and 2015, which allows the tracking of China’s green and low-carbon progress over time.
+                <br/>
+                <br/>
+
+                Read a summary of the key insights and recommendations from the report on this website (click here).
+                <br/>
+                <br/>
+
+                Or, download and read the full report from the link on the right.
+
+
               </BlackText>
             </Col>
             <Col span={8}>
@@ -105,14 +117,10 @@ export default class Page1 extends React.PureComponent {
           <Row>
             <Col span={8}>
               <BlackText>
-                LOGIC tracks the performance of Chinese
-                cities across seven low-carbon & green
-                categories/sub-categories. View the 2017
-                OGIC scores with the map on the right.
+                LOGIC tracks the performance of Chinese cities across seven low-carbon & green categories and sub-categories. View the 2017 LOGIC scores with the map on the right.
                 <br/>
-                Select to view the Overall Composite
-                LOGIC Score, or view category scores by
-                clicking the buttons below.
+                Select to view the cities’ Overall Composite LOGIC Score, or to view the category scores by clicking the labels below. And explore more data on other pages of this site.
+
               </BlackText>
 
             </Col>
@@ -170,12 +178,7 @@ export default class Page1 extends React.PureComponent {
                 <br/>
                 Policy & Outreach Category
                 <br/>
-                Data is collected from 115 cities in China, for a total of 23 indicators.
-                The indicators are defined with three types of performance
-                benchmarks (i.e. international best practice, China national target, or
-                as city relative ranking). The categories and indicators are weighted
-                for relative importance; and then combined to calculate an overall
-                index score for each city.
+                Data is collected from 115 cities in China, for a set of 23 indicators related to green and low-carbon city performance. The indicators are defined with three types of performance benchmarks (i.e. international best practice, China national target, or as a ranking of city values).The categories and indicators are weighted for relative importance; and then combined to calculate an overall index score for each city.
                 <br/>
                 Learn more about the LOGIC methodology by clicking here.
               </BlackText>
@@ -183,8 +186,7 @@ export default class Page1 extends React.PureComponent {
                 About the LOGIC Team
               </GreenTitle>
               <BlackText>
-                LOGIC was developed in partnership with iGDP, LBNL, and with funding
-                support from the Energy Foundation China.
+                LOGIC was developed in partnership with the Innovative Green Development Program (iGDP), the Lawrence Berkeley National Laboratory (LBNL), and with funding support from the Energy Foundation.
                 <br/>
                 Learn more about the LOGIC team by clicking here.
               </BlackText>

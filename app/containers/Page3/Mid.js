@@ -34,7 +34,7 @@ export default class Mid extends React.PureComponent {
         <Col span={12} style={{padding: '12px 24px'}}>
 
           <ChartContainer
-            title="LOGIC Score Change by Year"
+            title="Category Score, Change by Year(avg.all cities)"
             titleStyle={{fontSize: 18, color: '#6ab131'}}
           >
             <div style={{height: 240}}>
@@ -49,7 +49,7 @@ export default class Mid extends React.PureComponent {
         <Col span={12} style={{padding: '12px 24px'}}>
 
           <ChartContainer
-            title="All Cities Category Score vs. Total LOGIC Score"
+            title="Category Score vs. Overall LOGIC Score(all cities)"
             titleStyle={{fontSize: 18, color: '#6ab131'}}
           >
             <div style={{height: 240}}>
@@ -63,7 +63,7 @@ export default class Mid extends React.PureComponent {
         <Row>
           <Col span={12} style={{padding: '12px 24px'}}>
             <ChartContainer
-              title="Indicators Score Change by Year"
+              title="Category Indicators Scores, Change by Year(avg.all cities)"
               titleStyle={{fontSize: 18, color: '#6ab131'}}
             >
               <div style={{height: 300}}>
@@ -76,7 +76,7 @@ export default class Mid extends React.PureComponent {
 
           <Col span={12} style={{padding: '12px 24px'}}>
             <ChartContainer
-              title="Score Change 2010 to 2015 and Score Change 2010..."
+              title="Category Indicators Scores Change by Year"
               titleStyle={{fontSize: 18, color: '#6ab131'}}
             >
               <div style={{height: 300}}>

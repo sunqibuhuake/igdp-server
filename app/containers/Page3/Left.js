@@ -38,7 +38,7 @@ export default class Left extends React.PureComponent {
 
 
         <div style={{fontSize: 18, color: 'black', padding: '36px 0 24px'}}>
-          Logic Score Breakdown
+          Distribution of Selected LOGIC Category Scores(all cities)
         </div>
         <div style={{height: 400}}>
           <HBar
@@ -46,7 +46,7 @@ export default class Left extends React.PureComponent {
           ></HBar>
         </div>
         <div style={{fontSize: 18, color: 'black', padding: '36px 0 24px'}}>
-          Avg Score of Cities and Score Gap Avg by LabelName
+          Category Indicator Score vs. Maximum Possible (avg. all cities)
         </div>
         <div style={{height: 300 }}>
           <NormalBar

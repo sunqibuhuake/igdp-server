@@ -15,7 +15,7 @@ export default function(props) {
   const items = [
     {
       t: 'Explore the relative performance of the LOGIC categories/indicators',
-      c: 'Examine and compare performance of cities “grouped” by: city size, city economy,geography, and low-carbon pilot status',
+      c: 'Examine which of LOGIC’s seven categories / sub-categories and 23 green and low-carbon indicators contribute most to Chinese cities’ overall LOGIC scores, and how they are changing over time.',
       icon: icon1
     },
     {
