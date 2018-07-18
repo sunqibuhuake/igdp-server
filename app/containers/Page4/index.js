@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../../components/Container.js'
-import {Row,Col} from 'antd'
+import {Row,Col,Icon} from 'antd'
 import Title from '../../components/UI/Title'
 import GreenTitle from '../../components/UI/GreenTitle'
 import BlackTitle from '../../components/UI/BlackTitle'
@@ -102,7 +102,14 @@ export default class Page4 extends React.PureComponent {
                 >
 
                 </Map>
+              </div>
 
+              <div style={{width: '60%',margin: '12px auto',textAlign: 'center',height: 32, fontSize: 14,lineHeight: '32px', background: 'green',borderRadius: '32px', cursor: 'pointer',color: 'white'}}>
+                <a target="_blank" download="report.pdf" href="http://pbka77gq6.bkt.clouddn.com/China%20LOGIC%20Summary%20Report_website_0718.pdf">
+                  <span style={{color: 'white'}}>
+                    <Icon type="download" />
+                    Download the 2017 LOGIC Report</span>
+                </a>
               </div>
             </Col>
           </Row>

@@ -175,7 +175,7 @@ export function getIndicatorMax(ind, year) {
       max = item.max - 0
     }
   })
- 
+
   return max
 }
 

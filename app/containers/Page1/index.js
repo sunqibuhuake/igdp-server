@@ -93,15 +93,25 @@ export default class Page1 extends React.PureComponent {
             <Col span={8}>
               <div style={{width: '75%', margin: '0 auto', paddingTop: 48}}>
                 <img src={book_img} style={{width: '100%'}} />
-                <div style={{
+                <a
+                  style={{
+                    color: '#777777'
+                  }}
+                  target="_blank" download="report.pdf" href="http://pbka77gq6.bkt.clouddn.com/China%20LOGIC%20Summary%20Report_website_0718.pdf">
+                  <div style={{
                   fontSize: 12,
                   lineHeight: 2,
                   textAlign: 'center',
                   textDecoration: 'underline',
                   cursor: 'pointer'
                 }}>
-                  Click here to download the full 2017 report (PDF)
-                </div>
+                    <span style={{color: '#777777'}}>
+                    Click here to download the full 2017 report (PDF)
+
+                    </span>
+                  </div>
+                </a>
+
 
 
               </div>
