@@ -170,18 +170,12 @@ export function getFilteredIndicatorAvg(sid, year, lang) {
 
 export function getIndicatorMax(ind, year) {
   let max = 0;
-  detail.forEach(d => {
-    for(let name in d.indicators) {
-
-      if (name == ind) {
-        const value = d.indicators[name][year]
-        if (value > max) {
-          max = value
-        }
-
-      }
+  indicators.forEach(item => {
+    if (item.id == ind) {
+      max = item.max - 0
     }
   })
+ 
   return max
 }
 

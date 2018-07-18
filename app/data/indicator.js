@@ -252,7 +252,7 @@ const indicators = [
       "en": "Municip Low Carbon / Climate Plan"
     },
     "unit": "[True/False]",
-    "sid": "8",
+    "sid": "7",
     "pid": false,
     "max": "2.5",
     "label": {
@@ -265,7 +265,7 @@ const indicators = [
       "en": "Municip RE + Alt Energy Strategy"
     },
     "unit": "[True/False]",
-    "sid": "8",
+    "sid": "7",
     "pid": false,
     "max": "2.5",
     "label": {
@@ -278,7 +278,7 @@ const indicators = [
       "en": "Climate Resilience (assessment / plan)"
     },
     "unit": "[True/False]",
-    "sid": "8",
+    "sid": "7",
     "pid": false,
     "max": "2.5",
     "label": {
@@ -291,7 +291,7 @@ const indicators = [
       "en": "Low Carbon Lifestyle Publicity"
     },
     "unit": "[True/False]",
-    "sid": "8",
+    "sid": "7",
     "pid": false,
     "max": "2.5",
     "label": {
