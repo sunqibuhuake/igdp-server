@@ -21,12 +21,14 @@ export default function() {
         <img style={{height: 92}} src={logo1}/>
       </Col>
       <Col span={4} className="footer-logo-box">
-        <img style={{width: 96}} src={logo2}/>
-
+        <a href="https://china.lbl.gov" target="_blank">
+          <img style={{width: 96}} src={logo2}/>
+        </a>
       </Col>
       <Col span={4} className="footer-logo-box">
-        <img style={{height: 64, marginTop: 12}} src={logo3}/>
-
+        <a href="http://www.efchina.org/?set_language=en" target="_blank">
+          <img style={{height: 64, marginTop: 12}} src={logo3}/>
+        </a>
       </Col>
     </Row>
   )

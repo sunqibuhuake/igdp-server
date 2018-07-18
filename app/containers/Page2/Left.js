@@ -6,7 +6,7 @@ import helper from '../../utils/helper'
 import MetaItem from '../../components/MetaItem'
 import {Row} from 'antd'
 import Map from '../../components/Chart/Map'
-import {getOneCityPos} from '../../utils/calc'
+import {getOneCityPos,getScore, getRank} from '../../utils/calc'
 export default class Meta extends React.PureComponent {
   render() {
     const lang = this.props.lang;
@@ -17,6 +17,8 @@ export default class Meta extends React.PureComponent {
     const city_pilot_code = meta.status;
     const city_group_code = meta.group;
     const city_size_code = meta.size;
+    const score = getScore(city_index, this.props.page2.year)
+    const rank = getRank(city_index, this.props.page2.year)
 
     const eco = helper.getCityEco(this.props.page2.city_index)
 
@@ -62,9 +64,13 @@ export default class Meta extends React.PureComponent {
     ]
     return (
       <div>
-        <div>
+        <div style={{fontSize: 18, fontWeight: 'bold'}}>
           {meta.name[lang]}
         </div>
+          <Row style={{padding: '24px 0'}}>
+            <MetaItem value={score.toFixed(2)} name="Total Score Value"></MetaItem>
+            <MetaItem value={rank} name="Overall Rank"></MetaItem>
+          </Row>
 
         <div  style={{height: 320}}>
           <Map

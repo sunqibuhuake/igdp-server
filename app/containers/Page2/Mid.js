@@ -14,13 +14,18 @@ import {
   getSecondaryMax,
   getSecondaryMin
 } from '../../utils/calc'
+import indicator_list from '../../data/indicator'
+import secondary_cat_list from '../../data/secondary_cat'
 import NormalBar from '../../components/Chart/NormalBar'
 import StackBar from '../../components/Chart/StackBar'
 import Line from '../../components/Chart/Line'
 import Radar from '../../components/Chart/Radar'
 import {Row} from 'antd'
 import ChartContainer from '../../components/UI/ChartContainer'
+import Legend from '../../components/UI/Legend'
 
+import color from '../../utils/color'
+import radar_name from '../../data/radar_name'
 export default class Meta extends React.PureComponent {
   render() {
     const city_index = this.props.page2.city_index;
@@ -38,6 +43,32 @@ export default class Meta extends React.PureComponent {
     const secondaryMin = getSecondaryMin(lang, year)
     const secondaryMax = getSecondaryMax(lang, year)
 
+    const legend_data_1 = [
+      {
+        text:  'Score Value',
+        color: color.p
+      },
+      {
+        text: 'Gap from Maximum',
+        color: color.s
+      }
+    ]
+
+    const legend_data_2 = color.list.map( (c, index) => {
+      return {
+        text: secondary_cat_list[index][lang],
+        color: c
+      }
+    })
+
+    const legend_radar = []
+    for (let name in color.radar) {
+      legend_radar.push({
+        text: radar_name[name][lang],
+        color: color.radar[name]
+      })
+    }
+
 
     console.log(secondaryAvg)
 
@@ -46,8 +77,12 @@ export default class Meta extends React.PureComponent {
 
 
         <ChartContainer
-          title={(<span>Logic Scores VS. Maxium<br/><span style={{fontSize: 14, color: 'gray'}}>(Category, 2nd Category, Indicators)</span></span>)}
+          title={(<span>Logic Scores VS. Maximum<br/><span style={{fontSize: 14, color: 'gray'}}>(Category, 2nd Category, Indicators)</span></span>)}
         >
+          <Legend
+            style={{padding:"12px 0"}}
+            data={legend_data_1}
+          ></Legend>
           <div style={{height: 270, marginBottom: 24}}>
             <NormalBar
               data={primaryData}
@@ -72,6 +107,10 @@ export default class Meta extends React.PureComponent {
         <ChartContainer
           title="LOGIC Score, Breakdown by Category"
         >
+          <Legend
+            style={{padding:"12px 0 0"}}
+            data={legend_data_2}
+          ></Legend>
           <div style={{height: 560}}>
             <StackBar
               year={this.props.page2.year}
@@ -93,6 +132,10 @@ export default class Meta extends React.PureComponent {
         <ChartContainer
           title="LOGIC Categories, Change by Year"
         >
+          <Legend
+            style={{padding:"12px 0 0"}}
+            data={legend_data_2}
+          ></Legend>
           <div style={{height: 420}}>
             <Line
               data={secondaryLineData}
@@ -111,6 +154,7 @@ export default class Meta extends React.PureComponent {
         <ChartContainer
           title="City Performance Across Categories"
         >
+          <Legend data={legend_radar} style={{padding: '12xp 0'}}></Legend>
           <div style={{height: 420}}>
             <Radar
               data={{

@@ -69,15 +69,20 @@ export default class NormalBar extends React.PureComponent{
       yAxis: {
         type: 'category',
         data: data.map(item => {
-          if (item.name.length > 16) {
-            return item.name.slice(0, 14) + '...';
-          } else {
             return item.name
-          }
         }),
         axisTick: {
           show: false,
         },
+        axisLabel: {
+          formatter: (v, index) => {
+            if (v.length > 16) {
+              return v.slice(0, 14) + '...';
+            } else {
+              return v
+            }
+          }
+        }
       },
       series: [
         {

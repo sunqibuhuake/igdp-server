@@ -83,7 +83,7 @@ html, body {
   height: 16px;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 4px;
   color: red;
   /*background: red;*/
   border-radius: 50%;
@@ -94,6 +94,7 @@ html, body {
   padding-left: 22px;
   position: relative;
   padding-right: 12px;
+  display: inline-block;
 }
 
 .activeNavBtn::after{

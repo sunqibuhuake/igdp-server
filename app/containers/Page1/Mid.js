@@ -46,7 +46,7 @@ export default class Meta extends React.PureComponent {
       <div style={{padding: '0 12px'}}>
 
         <ChartContainer
-          title={(<span>Logic Scores VS. Maxium</span>)}
+          title={(<span>Logic Scores VS. Maximum</span>)}
         >
           <div style={{height: 270}}>
             <NormalBar

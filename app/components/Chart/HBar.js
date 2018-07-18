@@ -68,7 +68,9 @@ export default class NormalBar extends React.PureComponent{
       xAxis: {
         type: 'category',
         data: data.map(item => {
-          return item.name
+          const start = (item.name - 1.5).toFixed(1)
+          return start + '~' + item.name
+          //return item.name
         }),
         axisTick: {
           show: false,

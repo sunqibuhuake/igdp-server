@@ -46,6 +46,7 @@ export default class Radar extends React.PureComponent{
 
     const option = {
       title: {
+        show: false,
         text: '基础雷达图'
       },
       tooltip: {},

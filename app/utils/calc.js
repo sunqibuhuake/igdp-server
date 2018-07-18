@@ -520,3 +520,18 @@ export function getScore(city_index,year) {
   }
   return sum;
 }
+
+export function getRank(city_index, year) {
+  let rank = 0;
+  const arr = []
+  city_list.forEach(city => {
+    arr.push(getScore(city.id, year))
+  })
+  const target = getScore(city_index, year);
+  arr.forEach(s => {
+    if (s > target) {
+      rank ++
+    }
+  })
+  return rank + 1;
+}

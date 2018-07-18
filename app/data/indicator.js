@@ -253,7 +253,7 @@ const indicators = [
     },
     "unit": "[True/False]",
     "sid": "7",
-    "pid": false,
+    "pid": 4,
     "max": "2.5",
     "label": {
       "en": "Low Carbon / Climate Plan"
@@ -266,7 +266,7 @@ const indicators = [
     },
     "unit": "[True/False]",
     "sid": "7",
-    "pid": false,
+    "pid": 4,
     "max": "2.5",
     "label": {
       "en": "Renew + Alt Energy Strategy"
@@ -279,7 +279,7 @@ const indicators = [
     },
     "unit": "[True/False]",
     "sid": "7",
-    "pid": false,
+    "pid": 4,
     "max": "2.5",
     "label": {
       "en": "Climate Resiliance Plan"
@@ -292,7 +292,7 @@ const indicators = [
     },
     "unit": "[True/False]",
     "sid": "7",
-    "pid": false,
+    "pid": 4,
     "max": "2.5",
     "label": {
       "en": "Low Carbon Lifestyle Publicity"

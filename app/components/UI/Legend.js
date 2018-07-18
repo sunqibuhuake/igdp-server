@@ -6,7 +6,10 @@ export default class Legend extends React.PureComponent{
 
   render() {
     return (
-      <div>
+      <div style={{
+
+        ...this.props.style
+      }}>
 
         {this.props.data.map(d => (
           <span

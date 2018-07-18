@@ -44,6 +44,9 @@ export default class Scatter extends React.PureComponent{
         bottom: '24',
         containLabel: false
       },
+      tooltip : {
+        trigger: 'item'
+      },
       yAxis:  {
         type: 'value',
         axisLine: {
